@@ -5,275 +5,282 @@
   "login": "census-official",
   "orcid": null,
   "censusVersion": "2025-11-08",
-  "updatedAt": "2026-10-13T03:01:33+00:00",
+  "updatedAt": "2026-10-13T04:32:37+00:00",
   "fields": {
     "cell_type": {
-      "rows": 691060,
+      "rows": 706562,
       "shards": [
         {
           "file": "cell_type.000.tsv",
-          "rows": 17335,
-          "sha256": "10b51e80f82f8037c360d99b7969cc888016aebb2d82cf7a0d92ff1a060033dd",
-          "minKey": "63129049",
-          "maxKey": "63146383"
+          "rows": 20000,
+          "sha256": "6cba669b091ddf6c4a93462af862335e2e784b05000c6d9169b698995bacc1d0",
+          "minKey": "7040",
+          "maxKey": "63133546"
         },
         {
           "file": "cell_type.001.tsv",
-          "rows": 17339,
-          "sha256": "b4bb55343c23cbaca5b5389a35f0b43fff3a23294fb5fef98fb2e4bbc2c89b9c",
-          "minKey": "63146384",
-          "maxKey": "63163722"
+          "rows": 17337,
+          "sha256": "b76dc22b6248e1f19a23848457ec8a5bc00c17a3c5e9b288ebe083c6003cb98d",
+          "minKey": "63133547",
+          "maxKey": "63150883"
         },
         {
           "file": "cell_type.002.tsv",
-          "rows": 17366,
-          "sha256": "6a31bb1bfe7a55e2fcfc3e83f1c3fd343a7e39c283bd7204aeb4666659556f6e",
-          "minKey": "63163723",
-          "maxKey": "63181088"
+          "rows": 17349,
+          "sha256": "a9348b95ee25de48f9fe30c1aa965061794f6b00638bcfaa6961faaecdd20a29",
+          "minKey": "63150884",
+          "maxKey": "63168232"
         },
         {
           "file": "cell_type.003.tsv",
-          "rows": 17325,
-          "sha256": "a2a80608f8b6d2acd02aea047737beea98bfe73e25e618505501232987abc45f",
-          "minKey": "63181089",
-          "maxKey": "63198413"
+          "rows": 17362,
+          "sha256": "b87a2bb1e6584031d70b3a62db69ba02de0b1986da2454ed2fc1a692065f4d0b",
+          "minKey": "63168233",
+          "maxKey": "63185594"
         },
         {
           "file": "cell_type.004.tsv",
-          "rows": 17328,
-          "sha256": "e03fecf70e1056db64a7fb206c4c6261bbd3b24f00a45df70217eba610fa9c02",
-          "minKey": "63198414",
-          "maxKey": "63215741"
+          "rows": 17310,
+          "sha256": "a544a0f957f04177ce958d8405d5ca947009987102be129ab9670a4cf9c6f94d",
+          "minKey": "63185595",
+          "maxKey": "63202904"
         },
         {
           "file": "cell_type.005.tsv",
-          "rows": 17318,
-          "sha256": "9b5add76c3611286d312e4002c7f2a9fdfad3d011952f82668599a43f6f19738",
-          "minKey": "63215742",
-          "maxKey": "63233059"
+          "rows": 17331,
+          "sha256": "862f0a2854a45d08c06d5fe75b3b80d84fbd1857f663a0fa97b3713a325db116",
+          "minKey": "63202905",
+          "maxKey": "63220235"
         },
         {
           "file": "cell_type.006.tsv",
-          "rows": 17314,
-          "sha256": "f9cf3624044802df5c84d394e68306c09afda340ae8645ac3f808e88f9705648",
-          "minKey": "63233060",
-          "maxKey": "63250373"
+          "rows": 17325,
+          "sha256": "efc90c694c0d43373395c932c8c7f3cfdb7730f56127122cbaf19fb8a52e16b3",
+          "minKey": "63220236",
+          "maxKey": "63237560"
         },
         {
           "file": "cell_type.007.tsv",
-          "rows": 17310,
-          "sha256": "d81a906cfc0bbda4e3c327464d45dc3c8392f9a9d95b2b00cef65308e996321e",
-          "minKey": "63250374",
-          "maxKey": "63267683"
+          "rows": 17305,
+          "sha256": "a475ca78e8451726bbe140b00bbcf51dbebf81f0a29dc533555324acd076de23",
+          "minKey": "63237561",
+          "maxKey": "63254865"
         },
         {
           "file": "cell_type.008.tsv",
-          "rows": 17337,
-          "sha256": "733ea32585b677bfe1f7bac9f8190dd1675dbe8c56b124479a7549158475784a",
-          "minKey": "63267684",
-          "maxKey": "63285020"
+          "rows": 17305,
+          "sha256": "e26f9d7ca0d790a4062cc431aeeeec50913e3d4c7e86cc6ba5220cfd000403e3",
+          "minKey": "63254866",
+          "maxKey": "63272170"
         },
         {
           "file": "cell_type.009.tsv",
-          "rows": 17357,
-          "sha256": "eef696b26dd0afe52ac639e68506fc9eb1649827873700508e0bd685906fd0fe",
-          "minKey": "63285021",
-          "maxKey": "63302377"
+          "rows": 17366,
+          "sha256": "7f030afb005923f98b2e5de9742dcab291661eeb918faa9694706c9ae1bf28d0",
+          "minKey": "63272171",
+          "maxKey": "63289536"
         },
         {
           "file": "cell_type.010.tsv",
-          "rows": 17327,
-          "sha256": "babefe93d6189fb257431f0ac47752fad9046511f6eb0b45733224e126cfddd7",
-          "minKey": "63302378",
-          "maxKey": "63319704"
+          "rows": 17336,
+          "sha256": "d3443c54a24ad9cc5ec0674446df66678605ca5b725f583db10a7c5816fdf93c",
+          "minKey": "63289537",
+          "maxKey": "63306872"
         },
         {
           "file": "cell_type.011.tsv",
-          "rows": 17326,
-          "sha256": "08855f4ff616cf5cc407c00b721a093db5cc2a06f88c93e807b319ab1b86a23d",
-          "minKey": "63319705",
-          "maxKey": "63337030"
+          "rows": 17334,
+          "sha256": "6778fa5cb7dbeb3ccfcd6060356f30840e1ea3c4117a72dc7133795f0187ca0a",
+          "minKey": "63306873",
+          "maxKey": "63324206"
         },
         {
           "file": "cell_type.012.tsv",
-          "rows": 17357,
-          "sha256": "ee64b07d90c119b9de82bec622fe01d59b8044b631e67c46f9eae816017d43be",
-          "minKey": "63337031",
-          "maxKey": "63354387"
+          "rows": 17342,
+          "sha256": "a072a343023720140ccb3869080a96379d1fdb6873c250a9c36d6178bd49c668",
+          "minKey": "63324207",
+          "maxKey": "63341548"
         },
         {
           "file": "cell_type.013.tsv",
-          "rows": 17310,
-          "sha256": "310b33f788102b72747e2f81bcbad3af5253f4d6966f63da6aa397c64a41459d",
-          "minKey": "63354388",
-          "maxKey": "63371697"
+          "rows": 17323,
+          "sha256": "877e8218570a10670eb69d4fa675cf13bd255e9d417a9405a35390e38981dd75",
+          "minKey": "63341549",
+          "maxKey": "63358871"
         },
         {
           "file": "cell_type.014.tsv",
-          "rows": 17309,
-          "sha256": "651113e2e407f848e1f7ef559c8d66ab6d441cd3125bb261b68f3a599ced4dd3",
-          "minKey": "63371698",
-          "maxKey": "63389006"
+          "rows": 17320,
+          "sha256": "67d3d3eaef022a20160e21e27567a05ea6caebedb39475a0ed92febca362a5ed",
+          "minKey": "63358872",
+          "maxKey": "63376191"
         },
         {
           "file": "cell_type.015.tsv",
-          "rows": 17343,
-          "sha256": "30ba4ee7441b5bdde06c719bcc8d799fba1117ba77f4aa5cb9814fac2e58c954",
-          "minKey": "63389007",
-          "maxKey": "63406349"
+          "rows": 17310,
+          "sha256": "b67b24e3554503d5312c3e896dfeee235ef3c0dd7d8e8ca45b28c8554b13bfa3",
+          "minKey": "63376192",
+          "maxKey": "63393501"
         },
         {
           "file": "cell_type.016.tsv",
-          "rows": 17275,
-          "sha256": "1b3feadd19ed7d64f8519cdc1faa1e12a8fb9136d8df6368859acc5495f8685d",
-          "minKey": "63406350",
-          "maxKey": "63423624"
+          "rows": 17319,
+          "sha256": "3d427fd3b545a4b28193d563cc19286844a40a13c25e785ca4285ca13dcd50ef",
+          "minKey": "63393502",
+          "maxKey": "63410820"
         },
         {
           "file": "cell_type.017.tsv",
-          "rows": 17304,
-          "sha256": "338b37f0de33c1c89d0c8da001c5eec5b52225ea02deb38bea54ad84be906ee4",
-          "minKey": "63423625",
-          "maxKey": "63440928"
+          "rows": 17287,
+          "sha256": "4b268153725e31e3855e8c9a85fd4b666f5d2aa17edf533650eeeb669c9c38fd",
+          "minKey": "63410821",
+          "maxKey": "63428107"
         },
         {
           "file": "cell_type.018.tsv",
-          "rows": 17343,
-          "sha256": "06f2ba060d22dc67f3f946c8e07c13e908224fe90b1e05064bcbe5afbc92191b",
-          "minKey": "63440929",
-          "maxKey": "63458271"
+          "rows": 17295,
+          "sha256": "283d63b6297a4265d63786a2b8ca01131ae4006d924bf8dc14640c233e7536f8",
+          "minKey": "63428108",
+          "maxKey": "63445402"
         },
         {
           "file": "cell_type.019.tsv",
-          "rows": 17315,
-          "sha256": "8c9b907e2296caf345ba7e8975b85b6317c5b05ce628eccfc7ca449fe42016cd",
-          "minKey": "63458272",
-          "maxKey": "63475586"
+          "rows": 17368,
+          "sha256": "c73a9018a10e133e3ae809bc19c17207603f71f84fe49c9618110f6e1b828402",
+          "minKey": "63445403",
+          "maxKey": "63462770"
         },
         {
           "file": "cell_type.020.tsv",
-          "rows": 20000,
-          "sha256": "95f0dded2172b9b12a904cedd0a3330df2aaf1d9d38d47d87af5ea80b642501d",
-          "minKey": "63475587",
-          "maxKey": "95715947"
+          "rows": 17295,
+          "sha256": "913acb6d7e8f36c8c8a82502f3a49a29ecb70a2574f25fb136694e231897a938",
+          "minKey": "63462771",
+          "maxKey": "63480065"
         },
         {
           "file": "cell_type.021.tsv",
           "rows": 20000,
-          "sha256": "7a7c082714dce14cd11cdb14f469783ba781df0f4e72561ac6d073b62d298e09",
-          "minKey": "95715948",
-          "maxKey": "95735947"
+          "sha256": "ae6297643086e341baae11276bd174d62560b8145cf70ebf3ca74b4fd489f6bb",
+          "minKey": "63480066",
+          "maxKey": "95720426"
         },
         {
           "file": "cell_type.022.tsv",
           "rows": 20000,
-          "sha256": "a5f0f70201dc7338aa45f92488118cbb29f57ffe7ce5c30d28178d8d275fdee2",
-          "minKey": "95735948",
-          "maxKey": "95755947"
+          "sha256": "ee65d9fc67752a7137bcbd2caa04c2d22b25a6098e3502798c07f63f7bd0cb2a",
+          "minKey": "95720427",
+          "maxKey": "95740426"
         },
         {
           "file": "cell_type.023.tsv",
           "rows": 20000,
-          "sha256": "343aa79ff70fadc58e343f41d19bbb7f52b2e87a771a142252a8a1939f8f5dd3",
-          "minKey": "95755948",
-          "maxKey": "95775947"
+          "sha256": "22d611629cf069deebaa38f778d89fa59cd1602b8ca99e14dca702471c77cf7e",
+          "minKey": "95740427",
+          "maxKey": "95760426"
         },
         {
           "file": "cell_type.024.tsv",
           "rows": 20000,
-          "sha256": "9412fb8ed8f9ec926e7254e84df2d807d34c01a856fa93ea6dd6f58d4061d29a",
-          "minKey": "95775948",
-          "maxKey": "95795947"
+          "sha256": "ac82301e65d85a49dbfc6aaad4a4fd5b027a9f59d4b5ea973c9a1b42fdf2b0f7",
+          "minKey": "95760427",
+          "maxKey": "95780426"
         },
         {
           "file": "cell_type.025.tsv",
           "rows": 20000,
-          "sha256": "8df1c337da0768bd6f49be38c93e2a2c849b8aae115120a57d37bd263944c7b3",
-          "minKey": "95795948",
-          "maxKey": "95815947"
+          "sha256": "a13c20ab2ef55043b675c21232ddcb645b1e444f1d1272b54c75f96cb7c40bf2",
+          "minKey": "95780427",
+          "maxKey": "95800426"
         },
         {
           "file": "cell_type.026.tsv",
           "rows": 20000,
-          "sha256": "9b239cd220efdcdff0eb39ebac13eb1149a67de7b0adc31df379416223760cc8",
-          "minKey": "95815948",
-          "maxKey": "95835947"
+          "sha256": "c90c5bdbfbba122de5db53a7879a0c0842bec79b2f733204539d3306934f2ce9",
+          "minKey": "95800427",
+          "maxKey": "95820426"
         },
         {
           "file": "cell_type.027.tsv",
           "rows": 20000,
-          "sha256": "96895ceaa9e2f96f2d1c1c3733a36fe0004e6414c0b28e5425b3293688643c26",
-          "minKey": "95835948",
-          "maxKey": "95855947"
+          "sha256": "32252f61aaca3d9b32255753e66e88306ac87f44233b09b31d9acc655085fbb4",
+          "minKey": "95820427",
+          "maxKey": "95840426"
         },
         {
           "file": "cell_type.028.tsv",
           "rows": 20000,
-          "sha256": "133a4b0b249b7a3be887cbd95f8cd2c1524820bb83958965efd7d8ca1adf495a",
-          "minKey": "95855948",
-          "maxKey": "95875947"
+          "sha256": "2f4380659c99a5a8dcd17cced571c9fc87f28d3016a798d8053d040ea3da0a86",
+          "minKey": "95840427",
+          "maxKey": "95860426"
         },
         {
           "file": "cell_type.029.tsv",
           "rows": 20000,
-          "sha256": "8a8409d07f9e08844fa7d2f0498734b9bc719f97e0ada9d8c24716a8f0e92992",
-          "minKey": "95875948",
-          "maxKey": "95895947"
+          "sha256": "62760ed41e9a587949eb95c3633ef7d376aa16e0b3e113a1853a22aa76775703",
+          "minKey": "95860427",
+          "maxKey": "95880426"
         },
         {
           "file": "cell_type.030.tsv",
           "rows": 20000,
-          "sha256": "636e6a9ab4b9343b8b132c2a9fc5f2c2318c329bbfa78822f25405ee7775d8b7",
-          "minKey": "95895948",
-          "maxKey": "95915947"
+          "sha256": "4d6ce04010ce326e87b4b3a225ee862d190641affe5d6dd6d8474de4d39d62b0",
+          "minKey": "95880427",
+          "maxKey": "95900426"
         },
         {
           "file": "cell_type.031.tsv",
           "rows": 20000,
-          "sha256": "d1fbf50faa60bc325a6a8154cadcba48156cc9deecde793c2462cbe81f94e3a7",
-          "minKey": "95915948",
-          "maxKey": "95935947"
+          "sha256": "e4113fcf71daeb6bc4a17345887fcbb474f4d26af5ff23a856e015aeecd6a9a7",
+          "minKey": "95900427",
+          "maxKey": "95920426"
         },
         {
           "file": "cell_type.032.tsv",
           "rows": 20000,
-          "sha256": "545276b25427d4b0998f6c9b053d569b6e14a5cda1d948aa150c88665010a9cc",
-          "minKey": "95935948",
-          "maxKey": "95955947"
+          "sha256": "7cedb50908f5d2f002bbd99798fc4e557abd9e226a225912a386c04a468cad2b",
+          "minKey": "95920427",
+          "maxKey": "95940426"
         },
         {
           "file": "cell_type.033.tsv",
           "rows": 20000,
-          "sha256": "2d72667651680c87784ea26b1a98acf858c7a657a8fd4c79a20440c223fa7851",
-          "minKey": "95955948",
-          "maxKey": "95975947"
+          "sha256": "6dcbdc434c23618a0d586851c21b144609f018754b123952a65a2e4713190dcc",
+          "minKey": "95940427",
+          "maxKey": "95960426"
         },
         {
           "file": "cell_type.034.tsv",
           "rows": 20000,
-          "sha256": "2a63ba70e3318ecc5f0aca9b1743828a837f9480bf20b396040e839627a3acaf",
-          "minKey": "95975948",
-          "maxKey": "95995947"
+          "sha256": "2bc362926e994ca8898e023308fd13b53958ebed9563b617069d3d80e2626ce6",
+          "minKey": "95960427",
+          "maxKey": "95980426"
         },
         {
           "file": "cell_type.035.tsv",
           "rows": 20000,
-          "sha256": "529652d7f20377737186612aee8d9f0f4099cc79abd8eab594538d546f987596",
-          "minKey": "95995948",
-          "maxKey": "96015947"
+          "sha256": "3bb7980aea65e5d1f2dabce500ca684fa638887555b22f1144ee8ece78d280a6",
+          "minKey": "95980427",
+          "maxKey": "96000426"
         },
         {
           "file": "cell_type.036.tsv",
           "rows": 20000,
-          "sha256": "58cd60196597bedad3a289b3a664fc23bb677bd447ae275b0f50551328572302",
-          "minKey": "96015948",
-          "maxKey": "96035947"
+          "sha256": "257cb50aa4a6b7086038494c6d2be076f7c55211408342b9ef88c548a03b4f08",
+          "minKey": "96000427",
+          "maxKey": "96020426"
         },
         {
           "file": "cell_type.037.tsv",
-          "rows": 4522,
-          "sha256": "01f4513dd9a7d960b4a8c1498dee2583bd20793f4674bd1fd803ee2231120897",
-          "minKey": "96035948",
+          "rows": 20000,
+          "sha256": "a14547d802fe9f9e7d3e0f271f595b52422025593d59e50f8e79e5ab246f6ef4",
+          "minKey": "96020427",
+          "maxKey": "96040426"
+        },
+        {
+          "file": "cell_type.038.tsv",
+          "rows": 43,
+          "sha256": "7d719295aa01bfcd54f49658a417f658d63498dbc8914c93400b88d772de83bb",
+          "minKey": "96040427",
           "maxKey": "96040469"
         }
       ],
@@ -288,18 +295,51 @@
         "monocyte": 14215,
         "oligodendrocyte": 12481,
         "unknown": 8935,
+        "classical monocyte": 4815,
         "dendritic cell": 3961,
         "radial glial cell": 2807,
-        "natural killer cell": 2489,
+        "natural killer cell": 2490,
+        "CD16-positive, CD56-dim natural killer cell, human": 1721,
+        "CD4-positive, alpha-beta memory T cell": 1645,
+        "non-classical monocyte": 1590,
         "mural cell": 1418,
         "B cell": 1250,
+        "naive B cell": 974,
         "mammary gland epithelial cell": 966,
         "endothelial cell": 673,
-        "plasma cell": 572,
+        "effector memory CD8-positive, alpha-beta T cell": 623,
+        "plasma cell": 612,
+        "CD8-positive, alpha-beta memory T cell": 600,
+        "unswitched memory B cell": 596,
         "oligodendrocyte precursor cell": 496,
+        "erythroid progenitor cell": 390,
         "mast cell": 373,
+        "conventional dendritic cell": 352,
+        "class switched memory B cell": 330,
+        "myelocyte": 324,
+        "naive thymus-derived CD4-positive, alpha-beta T cell": 188,
+        "central memory CD8-positive, alpha-beta T cell": 187,
         "astrocyte": 173,
-        "neuron": 22
+        "hematopoietic multipotent progenitor cell": 171,
+        "naive thymus-derived CD8-positive, alpha-beta T cell": 165,
+        "lymphoid lineage restricted progenitor cell": 156,
+        "gamma-delta T cell": 109,
+        "early promyelocyte": 106,
+        "CD16-negative, CD56-bright natural killer cell, human": 77,
+        "immature B cell": 62,
+        "megakaryocyte progenitor cell": 57,
+        "late promyelocyte": 54,
+        "plasmacytoid dendritic cell": 46,
+        "megakaryocyte-erythroid progenitor cell": 35,
+        "basophil mast progenitor cell": 33,
+        "neuron": 22,
+        "common dendritic progenitor": 18,
+        "precursor B cell": 12,
+        "erythroid lineage cell": 10,
+        "memory B cell": 6,
+        "pro-B cell": 3,
+        "mesenchymal cell": 3,
+        "CD4-positive, alpha-beta cytotoxic T cell": 3
       },
       "origin": {
         "type": "human",
@@ -311,257 +351,266 @@
       "lastPushId": "seed-20251108"
     },
     "tissue_general": {
-      "rows": 691060,
+      "rows": 706562,
       "shards": [
         {
           "file": "tissue_general.000.tsv",
           "rows": 20000,
-          "sha256": "5ea9b1a3f3dc6ca9e65216da1601e1fa1a9f0195d2a4eafb3f01573336878315",
-          "minKey": "63129049",
-          "maxKey": "63149048"
+          "sha256": "ab0e935af78bfb5a696fff5126a2a0e915e997b28138e079c1cfb6bfce050147",
+          "minKey": "7040",
+          "maxKey": "63133546"
         },
         {
           "file": "tissue_general.001.tsv",
           "rows": 20000,
-          "sha256": "134f6b6fbdc3eb65033c0e0e45830674feac9b36f3bfcca0de09c22664b17395",
-          "minKey": "63149049",
-          "maxKey": "63169048"
+          "sha256": "6c677f422fb951c4f1612a951cb739eadd5a4499fb92310522af35de35a8ab3b",
+          "minKey": "63133547",
+          "maxKey": "63153546"
         },
         {
           "file": "tissue_general.002.tsv",
           "rows": 20000,
-          "sha256": "51a5d6514bc955ef6ece76da6e62bc813216e9d8664fcb2e198be01c3bc84421",
-          "minKey": "63169049",
-          "maxKey": "63189048"
+          "sha256": "8a8873e61950b7a9c0ccbac06ac7b002f946732032517cc9c9c915f1f85c7ce5",
+          "minKey": "63153547",
+          "maxKey": "63173546"
         },
         {
           "file": "tissue_general.003.tsv",
           "rows": 20000,
-          "sha256": "05b821bcdac1feda4a7933a86597423ad95eb0c46a70caf536486e7086117c04",
-          "minKey": "63189049",
-          "maxKey": "63209048"
+          "sha256": "55b9d060f80768641ef8b6a5a47e557f2efb17863a72944667ef6f803bd865f4",
+          "minKey": "63173547",
+          "maxKey": "63193546"
         },
         {
           "file": "tissue_general.004.tsv",
           "rows": 20000,
-          "sha256": "8c27f28bb39058590f61497f9a64f15368cb6d7f0a3486f42146b73e963ca1c9",
-          "minKey": "63209049",
-          "maxKey": "63229048"
+          "sha256": "e5a351394c5d16a743f3e2754bfdea81019e72b5a45e75d0660d3b8753f4f65c",
+          "minKey": "63193547",
+          "maxKey": "63213546"
         },
         {
           "file": "tissue_general.005.tsv",
           "rows": 20000,
-          "sha256": "eb132058372215fbcf00230b256bbf0a3ce683994bbed6c08ae14a2b115b137a",
-          "minKey": "63229049",
-          "maxKey": "63249048"
+          "sha256": "d3db4965f3b69037fb281154d9de0ca5ad877a281ca48e28fc06d48083f16e9b",
+          "minKey": "63213547",
+          "maxKey": "63233546"
         },
         {
           "file": "tissue_general.006.tsv",
           "rows": 20000,
-          "sha256": "3e8cbecdd5d3087009b95b279304dcc37a70726c56774c93e0da56c97855a446",
-          "minKey": "63249049",
-          "maxKey": "63269048"
+          "sha256": "1a1222b3e6ce4328dca39b2fd89ac08690919f7718be4e5792918192421f8e2c",
+          "minKey": "63233547",
+          "maxKey": "63253546"
         },
         {
           "file": "tissue_general.007.tsv",
           "rows": 20000,
-          "sha256": "450d863dd2c5db284326e4403ce10c34df056e323eee3a7bebe7cf541079b6b7",
-          "minKey": "63269049",
-          "maxKey": "63289048"
+          "sha256": "3d162d796e1e078366e4c9ddd8b461a1655f999851eb6e732303c4d755f3c361",
+          "minKey": "63253547",
+          "maxKey": "63273546"
         },
         {
           "file": "tissue_general.008.tsv",
           "rows": 20000,
-          "sha256": "c33f9b60edeac5c40681781eed1c44934d5ed71c1f6984b816968527074d5a38",
-          "minKey": "63289049",
-          "maxKey": "63309048"
+          "sha256": "e86712c5bd56318b6e2ae2885c423b3640a191e4ddbceaf27d79e371e48a48f6",
+          "minKey": "63273547",
+          "maxKey": "63293546"
         },
         {
           "file": "tissue_general.009.tsv",
           "rows": 20000,
-          "sha256": "3c20bf389a03d6b625facf0c3c6ecf65d9cf7c8564e929bd5b962d8a055e84fa",
-          "minKey": "63309049",
-          "maxKey": "63329048"
+          "sha256": "5b0d4cd05600790ca28c3c812c40a8ba41b2e4cb72231b3a4b7e624f294116b6",
+          "minKey": "63293547",
+          "maxKey": "63313546"
         },
         {
           "file": "tissue_general.010.tsv",
           "rows": 20000,
-          "sha256": "7d5be66b8617ba2d3c58bb4f2c0b56155a7fef6081a132903be023d815585786",
-          "minKey": "63329049",
-          "maxKey": "63349048"
+          "sha256": "52c55246ea465f2ea4792489b741027088bb929d40246f8361f4ad7d00d9c92c",
+          "minKey": "63313547",
+          "maxKey": "63333546"
         },
         {
           "file": "tissue_general.011.tsv",
           "rows": 20000,
-          "sha256": "8fee453d7d8943fe7745dc487ea7fd623a62ad9a30145ddf79642f6713e2af91",
-          "minKey": "63349049",
-          "maxKey": "63369048"
+          "sha256": "dbf9bc15a15fe1e952f65bdfe56cb458aeabe32dfc2d8e5c64940dc118414580",
+          "minKey": "63333547",
+          "maxKey": "63353546"
         },
         {
           "file": "tissue_general.012.tsv",
           "rows": 20000,
-          "sha256": "544c6431a291303a72fb7327dc9a70a7300a325eab495c6c1971383d3f50e71b",
-          "minKey": "63369049",
-          "maxKey": "63389048"
+          "sha256": "1de01c8fd04b8a4142b6aac5eb9306516627467490428897e65aa2cabb0cc79b",
+          "minKey": "63353547",
+          "maxKey": "63373546"
         },
         {
           "file": "tissue_general.013.tsv",
           "rows": 20000,
-          "sha256": "192a2f4611912e860e2f7c290cff156113c82de25253dce1477e0bcb17eb7092",
-          "minKey": "63389049",
-          "maxKey": "63409048"
+          "sha256": "bcc934653e9a81fc87c4b2f88b9e949b2fe0c8c216bec777302228abf3adbc23",
+          "minKey": "63373547",
+          "maxKey": "63393546"
         },
         {
           "file": "tissue_general.014.tsv",
           "rows": 20000,
-          "sha256": "1231e3d51f5da9e48acb87b9023366778ae96d3419311ae92648fc85c68b17c7",
-          "minKey": "63409049",
-          "maxKey": "63429048"
+          "sha256": "45e94cbc92157317873cfb770474e01ddf479acd3227a37dd0538efbe4b9acf1",
+          "minKey": "63393547",
+          "maxKey": "63413546"
         },
         {
           "file": "tissue_general.015.tsv",
           "rows": 20000,
-          "sha256": "d16403f9d8682c6ab9c9be91e3e5415a072daa633e3326ae95ea2f5dfaea1b5b",
-          "minKey": "63429049",
-          "maxKey": "63449048"
+          "sha256": "88054ca2a44419cdc677366e47b07161e6a12130a5f3d6b1f9458568ae514182",
+          "minKey": "63413547",
+          "maxKey": "63433546"
         },
         {
           "file": "tissue_general.016.tsv",
           "rows": 20000,
-          "sha256": "bcdb2757f26c23d31f1547b264af81cfcba5b5976f1c88a2cf1223fc2dbb3e8b",
-          "minKey": "63449049",
-          "maxKey": "63469048"
+          "sha256": "3cbdfc138fe3ed356aaf70f04b2abab718c1d1164f14fba0f7ba336def95ecd1",
+          "minKey": "63433547",
+          "maxKey": "63453546"
         },
         {
           "file": "tissue_general.017.tsv",
           "rows": 20000,
-          "sha256": "e03fd4ff12df1bc2d97fa84743386cf1763bceb0861f4a7a95ec3554d52ec399",
-          "minKey": "63469049",
-          "maxKey": "95709409"
+          "sha256": "3de78670efe669ac2a5a1e61295af475800ea981524cbcb289e4430b2ce6e343",
+          "minKey": "63453547",
+          "maxKey": "63473546"
         },
         {
           "file": "tissue_general.018.tsv",
           "rows": 20000,
-          "sha256": "adacd426e6bc9cd0c223e5ad6d8ecbf91c0953b38f333b73ca169beff92ef587",
-          "minKey": "95709410",
-          "maxKey": "95729409"
+          "sha256": "772654a12de98bf1aaeff0b78c9d127774e6d0221cb05d62332f0c2dfc3b872c",
+          "minKey": "63473547",
+          "maxKey": "95713907"
         },
         {
           "file": "tissue_general.019.tsv",
           "rows": 20000,
-          "sha256": "39eac27447d66c60fbb0e0fcc1938381d1f27321e8ca900d69d231aa3cf15dc2",
-          "minKey": "95729410",
-          "maxKey": "95749409"
+          "sha256": "80cfcf6e87045bf75faab80052f74c77e7d0a70fb96c429825f9357bb224b247",
+          "minKey": "95713908",
+          "maxKey": "95733907"
         },
         {
           "file": "tissue_general.020.tsv",
           "rows": 20000,
-          "sha256": "f517e2156abc66668f766a0e7804914d962f7104d1e06f19aea1ac8259888982",
-          "minKey": "95749410",
-          "maxKey": "95769409"
+          "sha256": "6a242b76660ad926aec331d5b4429dcb29322d9425e6cc52b60a6fe599c5759c",
+          "minKey": "95733908",
+          "maxKey": "95753907"
         },
         {
           "file": "tissue_general.021.tsv",
           "rows": 20000,
-          "sha256": "17a6b933ef90c019b2be52477a6b004ff9ed2a590a8e8d9fc93f0480ee3b4132",
-          "minKey": "95769410",
-          "maxKey": "95789409"
+          "sha256": "a110de4560a9c97341225ab8db5d568d26d859356c2a7cc1512ce62ae2d2cb40",
+          "minKey": "95753908",
+          "maxKey": "95773907"
         },
         {
           "file": "tissue_general.022.tsv",
           "rows": 20000,
-          "sha256": "76ca09cbb5ebc11822ddc18c7d03b09c029fce8ba7d2a7d6aff0a38b12897fb1",
-          "minKey": "95789410",
-          "maxKey": "95809409"
+          "sha256": "9aa13df33a03eb3329ae325be4935919cd292515cc3eb1127c5d12259f0dcc5c",
+          "minKey": "95773908",
+          "maxKey": "95793907"
         },
         {
           "file": "tissue_general.023.tsv",
           "rows": 20000,
-          "sha256": "957bc7e77f61b5d71dd8f4c69cc953cbbb1d0679f9a27f003ca78cb5161ce4d2",
-          "minKey": "95809410",
-          "maxKey": "95829409"
+          "sha256": "ac6c70969c031ee9d9c3de0905d58d36eb2e2848a57d811078e68c91e00317c8",
+          "minKey": "95793908",
+          "maxKey": "95813907"
         },
         {
           "file": "tissue_general.024.tsv",
           "rows": 20000,
-          "sha256": "f84eba5b39b52d15e776439e3a0a349337e00ab0d4c8c1aebe477d6719d2fb6a",
-          "minKey": "95829410",
-          "maxKey": "95849409"
+          "sha256": "e7f0708fe0b62db053a7aa2df925eb3d43ce160677c1bbd32a6493d36bddbac4",
+          "minKey": "95813908",
+          "maxKey": "95833907"
         },
         {
           "file": "tissue_general.025.tsv",
           "rows": 20000,
-          "sha256": "51a9f565938a68e59d5ffc1ba80c82997910d03278d417dbca6c0e3ecad34a16",
-          "minKey": "95849410",
-          "maxKey": "95869409"
+          "sha256": "5902909ac6e00049f163e19e77cb451cbb1a68bc72951e7ed6bdbf7ebc90c84c",
+          "minKey": "95833908",
+          "maxKey": "95853907"
         },
         {
           "file": "tissue_general.026.tsv",
           "rows": 20000,
-          "sha256": "b5ba64bbf231b4bb8b59287074b2317c1063b8ff5b5918c2b7800569110e5a9a",
-          "minKey": "95869410",
-          "maxKey": "95889409"
+          "sha256": "c4cbb0a878b2eacabdd3218d94659e48479378c6a51278182f62cb937fe76cae",
+          "minKey": "95853908",
+          "maxKey": "95873907"
         },
         {
           "file": "tissue_general.027.tsv",
           "rows": 20000,
-          "sha256": "624e20650b29b9ea104f9de660bdd5b466a580b7fdcab9251f58813204988044",
-          "minKey": "95889410",
-          "maxKey": "95909409"
+          "sha256": "fab7665273b21c98a34c8ae528239bf1a6223b3c3608eec4b69df4fd51d8becd",
+          "minKey": "95873908",
+          "maxKey": "95893907"
         },
         {
           "file": "tissue_general.028.tsv",
           "rows": 20000,
-          "sha256": "1806994c834512bba3ce5db7af28ef9aef8e66d983f7eaba496bf0a910a58de9",
-          "minKey": "95909410",
-          "maxKey": "95929409"
+          "sha256": "d1fc4200f130e16766f319da00ddaf938ad656c89332b4f55bb538894ef3a829",
+          "minKey": "95893908",
+          "maxKey": "95913907"
         },
         {
           "file": "tissue_general.029.tsv",
           "rows": 20000,
-          "sha256": "5b326ee7d70f87a86abbfe04affad38734c61921ff24ac5b141ba5499b3ce5b8",
-          "minKey": "95929410",
-          "maxKey": "95949409"
+          "sha256": "d6d695f80862a906ef820d86d7c49437fccf7cfe88063c97a2487528144a1fd7",
+          "minKey": "95913908",
+          "maxKey": "95933907"
         },
         {
           "file": "tissue_general.030.tsv",
           "rows": 20000,
-          "sha256": "7dd91c09f89faaa8f4d616a98a1b57e52ab8b0411cf2b3e9267de681b019ad08",
-          "minKey": "95949410",
-          "maxKey": "95969409"
+          "sha256": "0e9f39df30964d582bc155bb7ea788a37bdc11868e35dbc5b3a25ba9a9190cac",
+          "minKey": "95933908",
+          "maxKey": "95953907"
         },
         {
           "file": "tissue_general.031.tsv",
           "rows": 20000,
-          "sha256": "30b3ffce01d29ba46ed77e7faee0b40b79337246d9a48ab445fc22094e7dc5aa",
-          "minKey": "95969410",
-          "maxKey": "95989409"
+          "sha256": "9048ef3d1e7b5205fffb78912be1ad7b65377723e63a1117144c692b7c199264",
+          "minKey": "95953908",
+          "maxKey": "95973907"
         },
         {
           "file": "tissue_general.032.tsv",
           "rows": 20000,
-          "sha256": "24a0ae8a632eb90dc88d6cd996fbadc91986bb74f48283d171893fcd810fadc3",
-          "minKey": "95989410",
-          "maxKey": "96009409"
+          "sha256": "4528ebd52d9609306fa795abaccb9510ef15566e6f5d1179b38aa20943e000eb",
+          "minKey": "95973908",
+          "maxKey": "95993907"
         },
         {
           "file": "tissue_general.033.tsv",
           "rows": 20000,
-          "sha256": "2927bc44f07ed93f6d3b34bcc43d4bacf8ee7200cbb6a2f2a8a8823546945897",
-          "minKey": "96009410",
-          "maxKey": "96029409"
+          "sha256": "1f5ef346edb7eda7b15cc6e2d43aa572bee279230c9378999274f1178313d98c",
+          "minKey": "95993908",
+          "maxKey": "96013907"
         },
         {
           "file": "tissue_general.034.tsv",
-          "rows": 11060,
-          "sha256": "9471d946405642222cd8c80c001101237c2027e2c1f5ed6b5f2087ab271caa46",
-          "minKey": "96029410",
+          "rows": 20000,
+          "sha256": "ff38079f9dda19144fa29ac90c6824b2a6d23ca49d842774eebac42c9f772628",
+          "minKey": "96013908",
+          "maxKey": "96033907"
+        },
+        {
+          "file": "tissue_general.035.tsv",
+          "rows": 6562,
+          "sha256": "5c54f302bffc09b2d572e75c8022f6853ac7714427cf8d31d61666027a9c6c06",
+          "minKey": "96033908",
           "maxKey": "96040469"
         }
       ],
       "labels": {
         "breast": 352496,
-        "brain": 338564
+        "brain": 338564,
+        "bone marrow": 8357,
+        "blood": 7145
       },
       "origin": {
         "type": "human",
@@ -576,7 +625,7 @@
   "slice": {
     "organism": "Homo sapiens",
     "censusVersion": "2025-11-08",
-    "sliceNobs": 691060,
+    "sliceNobs": 706562,
     "datasetId": null,
     "sourceHash": null,
     "assay": null,
@@ -585,12 +634,12 @@
   "pushes": [
     {
       "id": "seed-20251108",
-      "at": "2026-10-13T03:01:33+00:00",
+      "at": "2026-10-13T04:32:37+00:00",
       "fields": [
         "cell_type",
         "tissue_general"
       ],
-      "comment": "census 2025-11-08 官方注释示例种子：cell_type + tissue_general，覆盖 Core GBmap + HBCA - epithelial。seed 脚本生成、App bot 直推；joinid 锚定 census 2025-11-08 底座，底座升级须重播。",
+      "comment": "census 2025-11-08 官方注释示例种子：cell_type + tissue_general，覆盖 Core GBmap + HBCA - epithelial + blood and bone marrow from a healthy young donor。seed 脚本生成、App bot 直推；joinid 锚定 census 2025-11-08 底座，底座升级须重播。",
       "commit": null
     }
   ]
