@@ -1,0 +1,3594 @@
+[
+{
+"label": "neuron",
+"cells": 10035322
+},
+{
+"label": "oligodendrocyte",
+"cells": 8105477
+},
+{
+"label": "naive thymus-derived CD4-positive, alpha-beta T cell",
+"cells": 5117342
+},
+{
+"label": "fibroblast",
+"cells": 4786982
+},
+{
+"label": "L2/3-6 intratelencephalic projecting glutamatergic neuron",
+"cells": 4708425
+},
+{
+"label": "glutamatergic neuron",
+"cells": 3260519
+},
+{
+"label": "astrocyte",
+"cells": 3202007
+},
+{
+"label": "macrophage",
+"cells": 3045365
+},
+{
+"label": "central memory CD4-positive, alpha-beta T cell",
+"cells": 2962416
+},
+{
+"label": "unknown",
+"cells": 2926081
+},
+{
+"label": "CD14-positive, CD16-negative classical monocyte",
+"cells": 2898378
+},
+{
+"label": "effector memory CD8-positive, alpha-beta T cell",
+"cells": 2252207
+},
+{
+"label": "CD4-positive, alpha-beta T cell",
+"cells": 2237982
+},
+{
+"label": "radial glial cell",
+"cells": 2143963
+},
+{
+"label": "CD16-positive, CD56-dim natural killer cell, human",
+"cells": 2081832
+},
+{
+"label": "CD8-positive, alpha-beta T cell",
+"cells": 2048526
+},
+{
+"label": "malignant cell",
+"cells": 1942920
+},
+{
+"label": "naive B cell",
+"cells": 1824044
+},
+{
+"label": "T cell",
+"cells": 1811896
+},
+{
+"label": "classical monocyte",
+"cells": 1799321
+},
+{
+"label": "B cell",
+"cells": 1786742
+},
+{
+"label": "natural killer cell",
+"cells": 1758766
+},
+{
+"label": "epithelial cell",
+"cells": 1757688
+},
+{
+"label": "effector memory CD4-positive, alpha-beta T cell",
+"cells": 1714211
+},
+{
+"label": "naive thymus-derived CD8-positive, alpha-beta T cell",
+"cells": 1623383
+},
+{
+"label": "retinal rod cell",
+"cells": 1595053
+},
+{
+"label": "neuroblast (sensu Vertebrata)",
+"cells": 1536378
+},
+{
+"label": "oligodendrocyte precursor cell",
+"cells": 1394354
+},
+{
+"label": "endothelial cell",
+"cells": 1388372
+},
+{
+"label": "memory B cell",
+"cells": 1337144
+},
+{
+"label": "microglial cell",
+"cells": 1183509
+},
+{
+"label": "monocyte",
+"cells": 1146183
+},
+{
+"label": "GABAergic neuron",
+"cells": 1028348
+},
+{
+"label": "cardiac muscle cell",
+"cells": 1017300
+},
+{
+"label": "CD14-positive monocyte",
+"cells": 968617
+},
+{
+"label": "VIP GABAergic cortical interneuron",
+"cells": 960731
+},
+{
+"label": "L2/3 intratelencephalic projecting glutamatergic neuron",
+"cells": 942111
+},
+{
+"label": "pvalb GABAergic cortical interneuron",
+"cells": 930030
+},
+{
+"label": "alveolar macrophage",
+"cells": 912685
+},
+{
+"label": "pericyte",
+"cells": 895433
+},
+{
+"label": "enterocyte",
+"cells": 889137
+},
+{
+"label": "pulmonary alveolar type 2 cell",
+"cells": 845259
+},
+{
+"label": "fibroblast of mammary gland",
+"cells": 833781
+},
+{
+"label": "sst GABAergic cortical interneuron",
+"cells": 831673
+},
+{
+"label": "luminal adaptive secretory precursor cell of mammary gland",
+"cells": 766794
+},
+{
+"label": "GABAergic amacrine cell",
+"cells": 765858
+},
+{
+"label": "stem cell",
+"cells": 739615
+},
+{
+"label": "CD4-positive, alpha-beta memory T cell",
+"cells": 733219
+},
+{
+"label": "CD8-positive, alpha-beta memory T cell",
+"cells": 724285
+},
+{
+"label": "capillary endothelial cell",
+"cells": 713263
+},
+{
+"label": "double-positive, alpha-beta thymocyte",
+"cells": 711645
+},
+{
+"label": "vein endothelial cell",
+"cells": 678926
+},
+{
+"label": "basal cell",
+"cells": 678784
+},
+{
+"label": "regular ventricular cardiac myocyte",
+"cells": 676980
+},
+{
+"label": "mucosal invariant T cell",
+"cells": 657651
+},
+{
+"label": "plasma cell",
+"cells": 643518
+},
+{
+"label": "stromal cell",
+"cells": 620413
+},
+{
+"label": "CD14-low, CD16-positive monocyte",
+"cells": 600980
+},
+{
+"label": "OFF midget ganglion cell",
+"cells": 591858
+},
+{
+"label": "neural cell",
+"cells": 588192
+},
+{
+"label": "mural cell",
+"cells": 586396
+},
+{
+"label": "glioblast",
+"cells": 581869
+},
+{
+"label": "lamp5 GABAergic cortical interneuron",
+"cells": 547716
+},
+{
+"label": "luminal hormone-sensing cell of mammary gland",
+"cells": 539544
+},
+{
+"label": "regulatory T cell",
+"cells": 514321
+},
+{
+"label": "myeloid cell",
+"cells": 499251
+},
+{
+"label": "perivascular cell",
+"cells": 483982
+},
+{
+"label": "Purkinje cell",
+"cells": 471757
+},
+{
+"label": "mesodermal cell",
+"cells": 467707
+},
+{
+"label": "fallopian tube secretory epithelial cell",
+"cells": 465721
+},
+{
+"label": "epithelial cell of proximal tubule",
+"cells": 463667
+},
+{
+"label": "IgA plasma cell",
+"cells": 460550
+},
+{
+"label": "erythrocyte",
+"cells": 457321
+},
+{
+"label": "ON midget ganglion cell",
+"cells": 443278
+},
+{
+"label": "hematopoietic multipotent progenitor cell",
+"cells": 436110
+},
+{
+"label": "gamma-delta T cell",
+"cells": 430192
+},
+{
+"label": "cortical cell of adrenal gland",
+"cells": 429643
+},
+{
+"label": "smooth muscle cell",
+"cells": 426176
+},
+{
+"label": "mesenchymal cell",
+"cells": 425282
+},
+{
+"label": "keratinocyte",
+"cells": 419386
+},
+{
+"label": "mature gamma-delta T cell",
+"cells": 414661
+},
+{
+"label": "hematopoietic precursor cell",
+"cells": 411439
+},
+{
+"label": "Mueller cell",
+"cells": 403916
+},
+{
+"label": "central nervous system macrophage",
+"cells": 394390
+},
+{
+"label": "retinal pigment epithelial cell",
+"cells": 393302
+},
+{
+"label": "astrocyte of the cerebral cortex",
+"cells": 389398
+},
+{
+"label": "central memory CD8-positive, alpha-beta T cell",
+"cells": 384738
+},
+{
+"label": "fibroblast of cardiac tissue",
+"cells": 383543
+},
+{
+"label": "neutrophil",
+"cells": 374463
+},
+{
+"label": "transit amplifying cell",
+"cells": 360707
+},
+{
+"label": "melanocyte",
+"cells": 360248
+},
+{
+"label": "endothelial cell of artery",
+"cells": 353765
+},
+{
+"label": "blood vessel endothelial cell",
+"cells": 352047
+},
+{
+"label": "basal-myoepithelial cell of mammary gland",
+"cells": 338018
+},
+{
+"label": "luminal epithelial cell of mammary gland",
+"cells": 334008
+},
+{
+"label": "keratocyte",
+"cells": 333395
+},
+{
+"label": "colonocyte",
+"cells": 331860
+},
+{
+"label": "cerebral cortex pyramidal neuron",
+"cells": 331000
+},
+{
+"label": "mast cell",
+"cells": 317991
+},
+{
+"label": "neural progenitor cell",
+"cells": 314032
+},
+{
+"label": "flat midget bipolar cell",
+"cells": 310864
+},
+{
+"label": "non-classical monocyte",
+"cells": 305923
+},
+{
+"label": "lymphocyte",
+"cells": 299898
+},
+{
+"label": "kidney loop of Henle thick ascending limb epithelial cell",
+"cells": 295733
+},
+{
+"label": "neuroblast (sensu Nematoda and Protostomia)",
+"cells": 292893
+},
+{
+"label": "CD16-negative, CD56-bright natural killer cell, human",
+"cells": 292821
+},
+{
+"label": "pulmonary alveolar type 1 cell",
+"cells": 292624
+},
+{
+"label": "amacrine cell",
+"cells": 285720
+},
+{
+"label": "glycinergic amacrine cell",
+"cells": 285645
+},
+{
+"label": "pigmented ciliary epithelial cell",
+"cells": 282877
+},
+{
+"label": "double negative thymocyte",
+"cells": 282716
+},
+{
+"label": "conventional dendritic cell",
+"cells": 282399
+},
+{
+"label": "vascular associated smooth muscle cell",
+"cells": 281521
+},
+{
+"label": "inhibitory interneuron",
+"cells": 278765
+},
+{
+"label": "CD1c-positive myeloid dendritic cell",
+"cells": 274477
+},
+{
+"label": "type B pancreatic cell",
+"cells": 268301
+},
+{
+"label": "mature alpha-beta T cell",
+"cells": 261028
+},
+{
+"label": "ciliary muscle cell",
+"cells": 258286
+},
+{
+"label": "Schwann cell",
+"cells": 252915
+},
+{
+"label": "rod bipolar cell",
+"cells": 250701
+},
+{
+"label": "retinal bipolar neuron",
+"cells": 244660
+},
+{
+"label": "endothelial cell of lymphatic vessel",
+"cells": 237896
+},
+{
+"label": "invaginating midget bipolar cell",
+"cells": 234994
+},
+{
+"label": "pyramidal neuron",
+"cells": 230824
+},
+{
+"label": "endothelial cell of vascular tree",
+"cells": 227109
+},
+{
+"label": "pancreatic A cell",
+"cells": 226754
+},
+{
+"label": "T follicular helper cell",
+"cells": 223325
+},
+{
+"label": "dendritic cell",
+"cells": 221619
+},
+{
+"label": "mesothelial cell",
+"cells": 220899
+},
+{
+"label": "myofibroblast cell",
+"cells": 217072
+},
+{
+"label": "endothelial cell of venule",
+"cells": 211097
+},
+{
+"label": "respiratory basal cell",
+"cells": 210641
+},
+{
+"label": "secretory cell",
+"cells": 202148
+},
+{
+"label": "goblet cell",
+"cells": 201741
+},
+{
+"label": "progenitor cell",
+"cells": 201061
+},
+{
+"label": "CD8-positive, alpha-beta cytotoxic T cell",
+"cells": 200515
+},
+{
+"label": "CD4-positive helper T cell",
+"cells": 199310
+},
+{
+"label": "plasmacytoid dendritic cell",
+"cells": 197935
+},
+{
+"label": "mature NK T cell",
+"cells": 197288
+},
+{
+"label": "endocardial cell",
+"cells": 193493
+},
+{
+"label": "club cell",
+"cells": 191249
+},
+{
+"label": "intestine goblet cell",
+"cells": 190907
+},
+{
+"label": "retinal cone cell",
+"cells": 188518
+},
+{
+"label": "corticothalamic-projecting glutamatergic cortical neuron",
+"cells": 188306
+},
+{
+"label": "hepatocyte",
+"cells": 185776
+},
+{
+"label": "cerebral cortex neuron",
+"cells": 183017
+},
+{
+"label": "ciliated cell",
+"cells": 181043
+},
+{
+"label": "periportal region hepatocyte",
+"cells": 180994
+},
+{
+"label": "regular atrial cardiac myocyte",
+"cells": 179200
+},
+{
+"label": "memory regulatory T cell",
+"cells": 179168
+},
+{
+"label": "L6b glutamatergic cortical neuron",
+"cells": 174335
+},
+{
+"label": "non-pigmented ciliary epithelial cell",
+"cells": 172828
+},
+{
+"label": "glial cell",
+"cells": 172121
+},
+{
+"label": "acinar cell of salivary gland",
+"cells": 170599
+},
+{
+"label": "IgG plasma cell",
+"cells": 170213
+},
+{
+"label": "stromal cell of ovary",
+"cells": 168408
+},
+{
+"label": "effector memory CD8-positive, alpha-beta T cell, terminally differentiated",
+"cells": 167278
+},
+{
+"label": "multiciliated columnar cell of tracheobronchial tree",
+"cells": 165381
+},
+{
+"label": "gastrointestinal tract (lamina propria) macrophage",
+"cells": 164642
+},
+{
+"label": "lung macrophage",
+"cells": 161006
+},
+{
+"label": "naive regulatory T cell",
+"cells": 160751
+},
+{
+"label": "platelet",
+"cells": 160635
+},
+{
+"label": "mature T cell",
+"cells": 156292
+},
+{
+"label": "basal cell of prostate epithelium",
+"cells": 155449
+},
+{
+"label": "placental villous trophoblast",
+"cells": 154384
+},
+{
+"label": "foveolar cell of stomach",
+"cells": 152102
+},
+{
+"label": "transitional stage B cell",
+"cells": 151369
+},
+{
+"label": "diffuse bipolar 2 cell",
+"cells": 147715
+},
+{
+"label": "retinal ganglion cell",
+"cells": 142302
+},
+{
+"label": "epithelial cell of lower respiratory tract",
+"cells": 142285
+},
+{
+"label": "extratelencephalic-projecting glutamatergic cortical neuron",
+"cells": 140218
+},
+{
+"label": "intermediate monocyte",
+"cells": 139483
+},
+{
+"label": "skin fibroblast",
+"cells": 138836
+},
+{
+"label": "adipocyte",
+"cells": 138617
+},
+{
+"label": "type I muscle cell",
+"cells": 138591
+},
+{
+"label": "epithelial cell of lung",
+"cells": 137198
+},
+{
+"label": "mesenchymal stem cell",
+"cells": 135972
+},
+{
+"label": "near-projecting glutamatergic cortical neuron",
+"cells": 133907
+},
+{
+"label": "hippocampal pyramidal neuron",
+"cells": 132850
+},
+{
+"label": "endothelial tip cell",
+"cells": 131343
+},
+{
+"label": "sncg GABAergic cortical interneuron",
+"cells": 130802
+},
+{
+"label": "L6 intratelencephalic projecting glutamatergic neuron",
+"cells": 128170
+},
+{
+"label": "retinal progenitor cell",
+"cells": 127740
+},
+{
+"label": "cardiac endothelial cell",
+"cells": 127693
+},
+{
+"label": "kidney collecting duct principal cell",
+"cells": 126946
+},
+{
+"label": "neoplastic cell",
+"cells": 124743
+},
+{
+"label": "conjunctival epithelial cell",
+"cells": 122771
+},
+{
+"label": "mononuclear phagocyte",
+"cells": 120568
+},
+{
+"label": "granule cell",
+"cells": 120344
+},
+{
+"label": "interneuron",
+"cells": 119296
+},
+{
+"label": "cell in vitro",
+"cells": 118672
+},
+{
+"label": "decidual cell",
+"cells": 118525
+},
+{
+"label": "elicited macrophage",
+"cells": 116551
+},
+{
+"label": "adipocyte of omentum tissue",
+"cells": 115456
+},
+{
+"label": "CD4-positive, CD25-positive, alpha-beta regulatory T cell",
+"cells": 115301
+},
+{
+"label": "granulosa cell",
+"cells": 114664
+},
+{
+"label": "pancreatic acinar cell",
+"cells": 114659
+},
+{
+"label": "nasal mucosa goblet cell",
+"cells": 114211
+},
+{
+"label": "germinal center B cell",
+"cells": 112875
+},
+{
+"label": "trabecular meshwork cell",
+"cells": 112252
+},
+{
+"label": "hippocampal granule cell",
+"cells": 109995
+},
+{
+"label": "diffuse bipolar 1 cell",
+"cells": 107132
+},
+{
+"label": "syncytiotrophoblast cell",
+"cells": 106746
+},
+{
+"label": "effector CD8-positive, alpha-beta T cell",
+"cells": 106235
+},
+{
+"label": "preadipocyte",
+"cells": 104964
+},
+{
+"label": "fenestrated endothelial cell",
+"cells": 104577
+},
+{
+"label": "fibroblast of lung",
+"cells": 104166
+},
+{
+"label": "choroid plexus epithelial cell",
+"cells": 103110
+},
+{
+"label": "diffuse bipolar 4 cell",
+"cells": 102904
+},
+{
+"label": "Be cell",
+"cells": 101981
+},
+{
+"label": "mammary gland epithelial cell",
+"cells": 101696
+},
+{
+"label": "ventricular cardiac muscle cell",
+"cells": 101284
+},
+{
+"label": "lung secretory cell",
+"cells": 101188
+},
+{
+"label": "T-helper 17 cell",
+"cells": 101035
+},
+{
+"label": "type II muscle cell",
+"cells": 100598
+},
+{
+"label": "subcutaneous adipocyte",
+"cells": 99177
+},
+{
+"label": "extravillous trophoblast",
+"cells": 98085
+},
+{
+"label": "mucous neck cell of gastric gland",
+"cells": 96215
+},
+{
+"label": "mature B cell",
+"cells": 95682
+},
+{
+"label": "centrilobular region hepatocyte",
+"cells": 95093
+},
+{
+"label": "erythroblast",
+"cells": 94242
+},
+{
+"label": "caudal ganglionic eminence derived cortical interneuron",
+"cells": 90723
+},
+{
+"label": "plasmablast",
+"cells": 90099
+},
+{
+"label": "group 3 innate lymphoid cell, human",
+"cells": 89416
+},
+{
+"label": "forebrain radial glial cell",
+"cells": 88343
+},
+{
+"label": "mesenchymal stem cell of adipose tissue",
+"cells": 87460
+},
+{
+"label": "blood vessel smooth muscle cell",
+"cells": 86617
+},
+{
+"label": "hepatoblast",
+"cells": 84394
+},
+{
+"label": "intestinal epithelial cell",
+"cells": 84280
+},
+{
+"label": "megakaryocyte",
+"cells": 84020
+},
+{
+"label": "vascular leptomeningeal cell",
+"cells": 83838
+},
+{
+"label": "innate lymphoid cell",
+"cells": 83114
+},
+{
+"label": "cerebral cortex GABAergic interneuron",
+"cells": 82536
+},
+{
+"label": "helper T cell",
+"cells": 81752
+},
+{
+"label": "bladder urothelial cell",
+"cells": 81723
+},
+{
+"label": "kidney collecting duct intercalated cell",
+"cells": 81301
+},
+{
+"label": "leukocyte",
+"cells": 81297
+},
+{
+"label": "cerebellar granule cell",
+"cells": 80865
+},
+{
+"label": "multiciliated epithelial cell",
+"cells": 80614
+},
+{
+"label": "immature alpha-beta T cell",
+"cells": 80461
+},
+{
+"label": "neuron associated cell (sensu Vertebrata)",
+"cells": 79325
+},
+{
+"label": "H1 horizontal cell",
+"cells": 78673
+},
+{
+"label": "leptomeningeal cell",
+"cells": 78594
+},
+{
+"label": "thymocyte",
+"cells": 77572
+},
+{
+"label": "diffuse bipolar 3b cell",
+"cells": 77536
+},
+{
+"label": "pancreatic ductal cell",
+"cells": 76781
+},
+{
+"label": "cytotoxic T cell",
+"cells": 76238
+},
+{
+"label": "stellate neuron",
+"cells": 75294
+},
+{
+"label": "L6 corticothalamic-projecting glutamatergic cortical neuron",
+"cells": 74229
+},
+{
+"label": "chandelier pvalb GABAergic cortical interneuron",
+"cells": 73701
+},
+{
+"label": "Sertoli cell",
+"cells": 73268
+},
+{
+"label": "kidney distal convoluted tubule epithelial cell",
+"cells": 72403
+},
+{
+"label": "cardiac blood vessel endothelial cell",
+"cells": 72373
+},
+{
+"label": "alveolar type 1 fibroblast cell",
+"cells": 71177
+},
+{
+"label": "CD4-positive, alpha-beta cytotoxic T cell",
+"cells": 71166
+},
+{
+"label": "tracheal goblet cell",
+"cells": 70417
+},
+{
+"label": "central nervous system neuron",
+"cells": 70165
+},
+{
+"label": "hippocampal interneuron",
+"cells": 69859
+},
+{
+"label": "skeletal muscle satellite stem cell",
+"cells": 69784
+},
+{
+"label": "unipolar brush cell",
+"cells": 69521
+},
+{
+"label": "fast muscle cell",
+"cells": 69268
+},
+{
+"label": "luminal cell of prostate epithelium",
+"cells": 69152
+},
+{
+"label": "naive T cell",
+"cells": 67574
+},
+{
+"label": "BEST4+ enterocyte",
+"cells": 66663
+},
+{
+"label": "cardiac muscle myoblast",
+"cells": 66335
+},
+{
+"label": "hippocampal astrocyte",
+"cells": 65712
+},
+{
+"label": "gut absorptive cell",
+"cells": 65528
+},
+{
+"label": "group 3 innate lymphoid cell",
+"cells": 64756
+},
+{
+"label": "endothelial cell of arteriole",
+"cells": 64396
+},
+{
+"label": "effector CD4-positive, alpha-beta T cell",
+"cells": 64055
+},
+{
+"label": "mature microglial cell",
+"cells": 63848
+},
+{
+"label": "ON-bipolar cell",
+"cells": 62002
+},
+{
+"label": "blood cell",
+"cells": 61132
+},
+{
+"label": "erythroid progenitor cell",
+"cells": 59723
+},
+{
+"label": "kidney connecting tubule epithelial cell",
+"cells": 59537
+},
+{
+"label": "hematopoietic stem cell",
+"cells": 57631
+},
+{
+"label": "stratified epithelial cell",
+"cells": 56967
+},
+{
+"label": "epithelial cell of esophagus",
+"cells": 56720
+},
+{
+"label": "intestinal crypt stem cell",
+"cells": 56719
+},
+{
+"label": "mesangial cell",
+"cells": 56686
+},
+{
+"label": "kidney interstitial fibroblast",
+"cells": 56259
+},
+{
+"label": "pro-B cell",
+"cells": 54655
+},
+{
+"label": "giant bipolar cell",
+"cells": 53904
+},
+{
+"label": "macroglial cell",
+"cells": 53713
+},
+{
+"label": "B-2 B cell",
+"cells": 53069
+},
+{
+"label": "Hofbauer cell",
+"cells": 52563
+},
+{
+"label": "non-myelinating Schwann cell",
+"cells": 52557
+},
+{
+"label": "activated CD4-positive, alpha-beta T cell",
+"cells": 52507
+},
+{
+"label": "L6b glutamatergic neuron of the primary motor cortex",
+"cells": 51806
+},
+{
+"label": "Kupffer cell",
+"cells": 51565
+},
+{
+"label": "OFF-bipolar cell",
+"cells": 51556
+},
+{
+"label": "precursor B cell",
+"cells": 50679
+},
+{
+"label": "uterine smooth muscle cell",
+"cells": 50542
+},
+{
+"label": "diffuse bipolar 3a cell",
+"cells": 50108
+},
+{
+"label": "interstitial cell of ovary",
+"cells": 49910
+},
+{
+"label": "retina horizontal cell",
+"cells": 49590
+},
+{
+"label": "pulmonary capillary endothelial cell",
+"cells": 49563
+},
+{
+"label": "promonocyte",
+"cells": 48909
+},
+{
+"label": "alpha-beta T cell",
+"cells": 48664
+},
+{
+"label": "colon epithelial cell",
+"cells": 47622
+},
+{
+"label": "kidney loop of Henle thin descending limb epithelial cell",
+"cells": 47362
+},
+{
+"label": "pluripotent stem cell",
+"cells": 47238
+},
+{
+"label": "L5/6 near-projecting glutamatergic neuron",
+"cells": 47164
+},
+{
+"label": "enteroendocrine cell",
+"cells": 47128
+},
+{
+"label": "hepatic stellate cell",
+"cells": 46993
+},
+{
+"label": "slow muscle cell",
+"cells": 46918
+},
+{
+"label": "abnormal cell",
+"cells": 46887
+},
+{
+"label": "activated CD8-positive, alpha-beta T cell",
+"cells": 46803
+},
+{
+"label": "midzonal region hepatocyte",
+"cells": 46630
+},
+{
+"label": "neuroendocrine cell",
+"cells": 46019
+},
+{
+"label": "chondrocyte",
+"cells": 45619
+},
+{
+"label": "alveolar adventitial fibroblast",
+"cells": 44952
+},
+{
+"label": "immature innate lymphoid cell",
+"cells": 44514
+},
+{
+"label": "endothelial cell of hepatic sinusoid",
+"cells": 44476
+},
+{
+"label": "enteroglial cell",
+"cells": 43805
+},
+{
+"label": "granulocyte monocyte progenitor cell",
+"cells": 43690
+},
+{
+"label": "enterocyte of epithelium of large intestine",
+"cells": 43665
+},
+{
+"label": "glandular secretory epithelial cell",
+"cells": 43240
+},
+{
+"label": "CD8-positive, alpha-beta regulatory T cell",
+"cells": 42845
+},
+{
+"label": "starburst amacrine cell",
+"cells": 42527
+},
+{
+"label": "ependymal cell",
+"cells": 41651
+},
+{
+"label": "enteric smooth muscle cell",
+"cells": 41600
+},
+{
+"label": "corneal epithelial cell",
+"cells": 41125
+},
+{
+"label": "kidney proximal convoluted tubule epithelial cell",
+"cells": 40644
+},
+{
+"label": "enterocyte of epithelium proper of duodenum",
+"cells": 40485
+},
+{
+"label": "interstitial cell of Cajal",
+"cells": 40420
+},
+{
+"label": "dopaminergic neuron",
+"cells": 40302
+},
+{
+"label": "diffuse bipolar 6 cell",
+"cells": 40196
+},
+{
+"label": "exhausted T cell",
+"cells": 39979
+},
+{
+"label": "CD4-positive, CD25-positive, CCR4-positive, alpha-beta regulatory T cell",
+"cells": 39604
+},
+{
+"label": "midbrain dopaminergic neuron",
+"cells": 39520
+},
+{
+"label": "large pre-B-II cell",
+"cells": 39056
+},
+{
+"label": "decidual natural killer cell, human",
+"cells": 38593
+},
+{
+"label": "pulmonary artery endothelial cell",
+"cells": 38524
+},
+{
+"label": "cortical thymic epithelial cell",
+"cells": 37717
+},
+{
+"label": "megakaryocyte-erythroid progenitor cell",
+"cells": 37688
+},
+{
+"label": "stratified squamous epithelial cell",
+"cells": 36969
+},
+{
+"label": "pulmonary alveolar epithelial cell",
+"cells": 36799
+},
+{
+"label": "retinal astrocyte",
+"cells": 36467
+},
+{
+"label": "CD8-positive, alpha-beta memory T cell, CD45RO-positive",
+"cells": 36334
+},
+{
+"label": "lung multiciliated epithelial cell",
+"cells": 36193
+},
+{
+"label": "kidney epithelial cell",
+"cells": 36108
+},
+{
+"label": "CD4-positive, alpha-beta thymocyte",
+"cells": 36077
+},
+{
+"label": "class switched memory B cell",
+"cells": 35910
+},
+{
+"label": "serous secreting cell",
+"cells": 35583
+},
+{
+"label": "acinar cell",
+"cells": 35550
+},
+{
+"label": "L5 extratelencephalic projecting glutamatergic cortical neuron",
+"cells": 35520
+},
+{
+"label": "endothelial cell of pericentral hepatic sinusoid",
+"cells": 35210
+},
+{
+"label": "common myeloid progenitor",
+"cells": 34761
+},
+{
+"label": "ciliated epithelial cell",
+"cells": 34754
+},
+{
+"label": "hematopoietic cell",
+"cells": 34675
+},
+{
+"label": "pancreatic D cell",
+"cells": 34663
+},
+{
+"label": "memory T cell",
+"cells": 34059
+},
+{
+"label": "inflammatory macrophage",
+"cells": 33803
+},
+{
+"label": "basal cell of epidermis",
+"cells": 33726
+},
+{
+"label": "IgM plasma cell",
+"cells": 33490
+},
+{
+"label": "reticulocyte",
+"cells": 33385
+},
+{
+"label": "early pro-B cell",
+"cells": 32723
+},
+{
+"label": "OFFx cell",
+"cells": 32703
+},
+{
+"label": "basal cell of epithelium of trachea",
+"cells": 32681
+},
+{
+"label": "thymic fibroblast type 1",
+"cells": 32606
+},
+{
+"label": "pigmented epithelial cell",
+"cells": 32131
+},
+{
+"label": "fibroblast of breast",
+"cells": 31907
+},
+{
+"label": "respiratory tract suprabasal cell",
+"cells": 31476
+},
+{
+"label": "CD8aa(I) thymocyte",
+"cells": 31338
+},
+{
+"label": "Bergmann glial cell",
+"cells": 30296
+},
+{
+"label": "CD14-positive, CD16-positive monocyte",
+"cells": 30103
+},
+{
+"label": "supporting cell",
+"cells": 30009
+},
+{
+"label": "vein endothelial cell of respiratory system",
+"cells": 29758
+},
+{
+"label": "cell of skeletal muscle",
+"cells": 29120
+},
+{
+"label": "bronchus fibroblast of lung",
+"cells": 28850
+},
+{
+"label": "kidney loop of Henle thin ascending limb epithelial cell",
+"cells": 28477
+},
+{
+"label": "fibroblast of dermis",
+"cells": 28210
+},
+{
+"label": "tracheobronchial smooth muscle cell",
+"cells": 28186
+},
+{
+"label": "corneal endothelial cell",
+"cells": 28171
+},
+{
+"label": "mature astrocyte",
+"cells": 28029
+},
+{
+"label": "alternatively activated macrophage",
+"cells": 28013
+},
+{
+"label": "small pre-B-II cell",
+"cells": 27888
+},
+{
+"label": "late pro-B cell",
+"cells": 27585
+},
+{
+"label": "forebrain neuroblast",
+"cells": 27211
+},
+{
+"label": "intermediate cell of urothelium",
+"cells": 27013
+},
+{
+"label": "OFF parasol ganglion cell",
+"cells": 26650
+},
+{
+"label": "immature B cell",
+"cells": 26613
+},
+{
+"label": "spinous cell of epidermis",
+"cells": 26321
+},
+{
+"label": "chromaffin cell",
+"cells": 26199
+},
+{
+"label": "cardiac ventricle fibroblast",
+"cells": 26027
+},
+{
+"label": "CD8-alpha-alpha-positive, alpha-beta intraepithelial T cell",
+"cells": 25731
+},
+{
+"label": "perivascular macrophage",
+"cells": 25519
+},
+{
+"label": "dendritic cell, human",
+"cells": 25194
+},
+{
+"label": "memory CCR4-positive regulatory T cell",
+"cells": 24981
+},
+{
+"label": "endothelial cell of placenta",
+"cells": 24971
+},
+{
+"label": "respiratory tract epithelial cell",
+"cells": 24874
+},
+{
+"label": "midget ganglion cell of retina",
+"cells": 24814
+},
+{
+"label": "fibroblast of gingiva",
+"cells": 24721
+},
+{
+"label": "thymic fibroblast type 2",
+"cells": 24643
+},
+{
+"label": "ON parasol ganglion cell",
+"cells": 24561
+},
+{
+"label": "L4 intratelencephalic projecting glutamatergic neuron",
+"cells": 24266
+},
+{
+"label": "podocyte",
+"cells": 24109
+},
+{
+"label": "CD34-negative, CD117-positive innate lymphoid cell, human",
+"cells": 23970
+},
+{
+"label": "muscle cell",
+"cells": 23963
+},
+{
+"label": "plasmacytoid dendritic cell, human",
+"cells": 23910
+},
+{
+"label": "lung endothelial cell",
+"cells": 23907
+},
+{
+"label": "unswitched memory B cell",
+"cells": 23812
+},
+{
+"label": "epithelial cell of urethra",
+"cells": 23634
+},
+{
+"label": "adventitial cell",
+"cells": 23475
+},
+{
+"label": "granulocyte",
+"cells": 23371
+},
+{
+"label": "epithelial cell of nephron",
+"cells": 23259
+},
+{
+"label": "skeletal muscle fiber",
+"cells": 22993
+},
+{
+"label": "follicular B cell",
+"cells": 22829
+},
+{
+"label": "paneth cell",
+"cells": 22762
+},
+{
+"label": "respiratory tract multiciliated cell",
+"cells": 22618
+},
+{
+"label": "cycling T cell",
+"cells": 22457
+},
+{
+"label": "fraction A pre-pro B cell",
+"cells": 22456
+},
+{
+"label": "skeletal muscle satellite cell",
+"cells": 22228
+},
+{
+"label": "group 1 innate lymphoid cell",
+"cells": 22031
+},
+{
+"label": "alveolar capillary type 1 endothelial cell",
+"cells": 21624
+},
+{
+"label": "lung interstitial macrophage",
+"cells": 21439
+},
+{
+"label": "endothelial cell of uterus",
+"cells": 20688
+},
+{
+"label": "lung pericyte",
+"cells": 20682
+},
+{
+"label": "tonsil germinal center B cell",
+"cells": 20505
+},
+{
+"label": "basal cell of urothelium",
+"cells": 20484
+},
+{
+"label": "cortical interneuron",
+"cells": 20470
+},
+{
+"label": "neural stem cell",
+"cells": 20454
+},
+{
+"label": "cardiac neuron",
+"cells": 20442
+},
+{
+"label": "enterocyte of epithelium proper of ileum",
+"cells": 20240
+},
+{
+"label": "renal interstitial pericyte",
+"cells": 20154
+},
+{
+"label": "transit amplifying cell of colon",
+"cells": 20068
+},
+{
+"label": "fibro/adipogenic progenitor cell",
+"cells": 20018
+},
+{
+"label": "splanchnic mesodermal cell",
+"cells": 19921
+},
+{
+"label": "erythroid lineage cell",
+"cells": 19004
+},
+{
+"label": "peptic cell",
+"cells": 18789
+},
+{
+"label": "progenitor cell of mammary luminal epithelium",
+"cells": 18784
+},
+{
+"label": "neural crest cell",
+"cells": 18726
+},
+{
+"label": "enteric neuron",
+"cells": 18668
+},
+{
+"label": "kidney interstitial cell",
+"cells": 18504
+},
+{
+"label": "T-helper 22 cell",
+"cells": 18379
+},
+{
+"label": "alveolar capillary type 2 endothelial cell",
+"cells": 18006
+},
+{
+"label": "primordial germ cell",
+"cells": 17752
+},
+{
+"label": "sensory neuron",
+"cells": 17571
+},
+{
+"label": "M cell of gut",
+"cells": 17536
+},
+{
+"label": "pancreatic stellate cell",
+"cells": 17463
+},
+{
+"label": "medial ganglionic eminence derived GABAergic cortical interneuron",
+"cells": 17021
+},
+{
+"label": "NKp46-positive innate lymphoid cell, human",
+"cells": 16978
+},
+{
+"label": "muscle fibroblast",
+"cells": 16974
+},
+{
+"label": "B-1 B cell",
+"cells": 16956
+},
+{
+"label": "ovarian surface epithelial cell",
+"cells": 16930
+},
+{
+"label": "myeloid leukocyte",
+"cells": 16815
+},
+{
+"label": "myeloid dendritic cell",
+"cells": 16633
+},
+{
+"label": "pulmonary interstitial fibroblast",
+"cells": 16633
+},
+{
+"label": "medullary thymic epithelial cell",
+"cells": 16371
+},
+{
+"label": "effector memory CD4-positive, alpha-beta T cell, terminally differentiated",
+"cells": 16366
+},
+{
+"label": "duct epithelial cell",
+"cells": 16165
+},
+{
+"label": "lactocyte",
+"cells": 15973
+},
+{
+"label": "Langerhans cell",
+"cells": 15941
+},
+{
+"label": "fibroblast of choroid plexus",
+"cells": 15894
+},
+{
+"label": "colon goblet cell",
+"cells": 15613
+},
+{
+"label": "intestinal crypt stem cell of colon",
+"cells": 15611
+},
+{
+"label": "osteoblast",
+"cells": 15542
+},
+{
+"label": "germ cell",
+"cells": 15525
+},
+{
+"label": "photoreceptor cell",
+"cells": 15407
+},
+{
+"label": "H2 horizontal cell",
+"cells": 15390
+},
+{
+"label": "squamous epithelial cell",
+"cells": 15294
+},
+{
+"label": "cell",
+"cells": 15258
+},
+{
+"label": "microcirculation associated smooth muscle cell",
+"cells": 15257
+},
+{
+"label": "common lymphoid progenitor",
+"cells": 15211
+},
+{
+"label": "early colonocyte",
+"cells": 14733
+},
+{
+"label": "motor neuron",
+"cells": 14576
+},
+{
+"label": "salivary gland glandular cell",
+"cells": 14528
+},
+{
+"label": "intratelencephalic-projecting glutamatergic cortical neuron",
+"cells": 14400
+},
+{
+"label": "activated CD4-positive, alpha-beta T cell, human",
+"cells": 14331
+},
+{
+"label": "prostate gland microvascular endothelial cell",
+"cells": 14230
+},
+{
+"label": "TREM2-positive macrophage",
+"cells": 14187
+},
+{
+"label": "Tc1 cell",
+"cells": 13863
+},
+{
+"label": "renal principal cell",
+"cells": 13846
+},
+{
+"label": "natural T-regulatory cell",
+"cells": 13632
+},
+{
+"label": "parietal epithelial cell",
+"cells": 13428
+},
+{
+"label": "promyelocyte",
+"cells": 13278
+},
+{
+"label": "tuft cell of small intestine",
+"cells": 13227
+},
+{
+"label": "epithelial cell of stomach",
+"cells": 12980
+},
+{
+"label": "monocyte-derived dendritic cell",
+"cells": 12876
+},
+{
+"label": "CD38-negative naive B cell",
+"cells": 12838
+},
+{
+"label": "kidney cell",
+"cells": 12777
+},
+{
+"label": "peritubular capillary endothelial cell",
+"cells": 12717
+},
+{
+"label": "corticomedullary thymic epithelial cell",
+"cells": 12692
+},
+{
+"label": "pro-T cell",
+"cells": 12409
+},
+{
+"label": "kidney interstitial alternatively activated macrophage",
+"cells": 12333
+},
+{
+"label": "cerebral cortex endothelial cell",
+"cells": 12291
+},
+{
+"label": "myelocyte",
+"cells": 12224
+},
+{
+"label": "primitive red blood cell",
+"cells": 12169
+},
+{
+"label": "myelinating Schwann cell",
+"cells": 12082
+},
+{
+"label": "spermatid",
+"cells": 12027
+},
+{
+"label": "CD141-positive myeloid dendritic cell",
+"cells": 11919
+},
+{
+"label": "lateral mesodermal cell",
+"cells": 11823
+},
+{
+"label": "embryonic fibroblast",
+"cells": 11816
+},
+{
+"label": "lymphoid lineage restricted progenitor cell",
+"cells": 11685
+},
+{
+"label": "early lymphoid progenitor",
+"cells": 11633
+},
+{
+"label": "taste receptor cell",
+"cells": 11616
+},
+{
+"label": "serous secreting cell of bronchus submucosal gland",
+"cells": 11609
+},
+{
+"label": "activated type II NK T cell",
+"cells": 11568
+},
+{
+"label": "myoepithelial cell",
+"cells": 11461
+},
+{
+"label": "fibroblastic reticular cell",
+"cells": 11430
+},
+{
+"label": "intrahepatic cholangiocyte",
+"cells": 11293
+},
+{
+"label": "direct pathway medium spiny neuron",
+"cells": 11276
+},
+{
+"label": "enterocyte of epithelium of small intestine",
+"cells": 11250
+},
+{
+"label": "skeletal muscle myoblast",
+"cells": 11170
+},
+{
+"label": "indirect pathway medium spiny neuron",
+"cells": 11091
+},
+{
+"label": "cholangiocyte",
+"cells": 11084
+},
+{
+"label": "myeloid dendritic cell, human",
+"cells": 11079
+},
+{
+"label": "epithelial cell of prostate",
+"cells": 10917
+},
+{
+"label": "immature pericyte",
+"cells": 10864
+},
+{
+"label": "epithelial cell of pancreas",
+"cells": 10845
+},
+{
+"label": "kidney loop of Henle ascending limb epithelial cell",
+"cells": 10531
+},
+{
+"label": "cone retinal bipolar cell",
+"cells": 10510
+},
+{
+"label": "hair follicular keratinocyte",
+"cells": 10424
+},
+{
+"label": "small intestine goblet cell",
+"cells": 10325
+},
+{
+"label": "tuft cell of colon",
+"cells": 10316
+},
+{
+"label": "professional antigen presenting cell",
+"cells": 10243
+},
+{
+"label": "respiratory tract hillock cell",
+"cells": 10170
+},
+{
+"label": "brain vascular cell",
+"cells": 10009
+},
+{
+"label": "cycling macrophage",
+"cells": 9982
+},
+{
+"label": "epicardial adipocyte",
+"cells": 9956
+},
+{
+"label": "club-like cell of the urethral epithelium",
+"cells": 9932
+},
+{
+"label": "follicular dendritic cell",
+"cells": 9853
+},
+{
+"label": "hepatic pit cell",
+"cells": 9829
+},
+{
+"label": "CD8-positive, alpha-beta thymocyte",
+"cells": 9817
+},
+{
+"label": "peg cell",
+"cells": 9787
+},
+{
+"label": "adipocyte of breast",
+"cells": 9780
+},
+{
+"label": "L5 intratelencephalic projecting glutamatergic neuron",
+"cells": 9638
+},
+{
+"label": "intermediate mesodermal cell",
+"cells": 9629
+},
+{
+"label": "S cone cell",
+"cells": 9580
+},
+{
+"label": "mucosa-associated lymphoid tissue macrophage",
+"cells": 9530
+},
+{
+"label": "endocrine cell",
+"cells": 9522
+},
+{
+"label": "somatic stem cell",
+"cells": 9473
+},
+{
+"label": "medullary thymic epithelial cell type 1",
+"cells": 9338
+},
+{
+"label": "spermatocyte",
+"cells": 9210
+},
+{
+"label": "cord blood hematopoietic stem cell",
+"cells": 9056
+},
+{
+"label": "cycling basal cell",
+"cells": 9008
+},
+{
+"label": "tracheobronchial serous cell",
+"cells": 8950
+},
+{
+"label": "luminal endometrial multiciliated epithelial cell",
+"cells": 8937
+},
+{
+"label": "kidney loop of Henle epithelial cell",
+"cells": 8870
+},
+{
+"label": "vascular lymphangioblast",
+"cells": 8847
+},
+{
+"label": "smooth muscle cell of prostate",
+"cells": 8810
+},
+{
+"label": "afferent neuron",
+"cells": 8684
+},
+{
+"label": "epithelial cell of early distal convoluted tubule",
+"cells": 8681
+},
+{
+"label": "neuroepithelial stem cell",
+"cells": 8616
+},
+{
+"label": "gut endothelial cell",
+"cells": 8601
+},
+{
+"label": "fibroblast of the aortic adventitia",
+"cells": 8584
+},
+{
+"label": "endodermal cell",
+"cells": 8571
+},
+{
+"label": "endothelial cell of respiratory system lymphatic vessel",
+"cells": 8493
+},
+{
+"label": "endothelial cell of periportal hepatic sinusoid",
+"cells": 8479
+},
+{
+"label": "lung resident memory CD8-positive, alpha-beta T cell",
+"cells": 8397
+},
+{
+"label": "CD8-positive, CD28-negative, alpha-beta regulatory T cell",
+"cells": 8377
+},
+{
+"label": "type EC enteroendocrine cell",
+"cells": 8321
+},
+{
+"label": "eye photoreceptor cell",
+"cells": 8200
+},
+{
+"label": "basal epithelial cell of tracheobronchial tree",
+"cells": 8145
+},
+{
+"label": "fibroblast of connective tissue of prostate",
+"cells": 8131
+},
+{
+"label": "group 2 innate lymphoid cell",
+"cells": 7844
+},
+{
+"label": "ionocyte",
+"cells": 7743
+},
+{
+"label": "renal intercalated cell",
+"cells": 7669
+},
+{
+"label": "fibroblast of connective tissue of nonglandular part of prostate",
+"cells": 7654
+},
+{
+"label": "theca cell",
+"cells": 7647
+},
+{
+"label": "Cajal-Retzius cell",
+"cells": 7596
+},
+{
+"label": "oral mucosa squamous cell",
+"cells": 7386
+},
+{
+"label": "glandular cell of esophagus",
+"cells": 7376
+},
+{
+"label": "thyroid follicular cell",
+"cells": 7302
+},
+{
+"label": "basal epithelial cell of prostatic duct",
+"cells": 7295
+},
+{
+"label": "parietal cell",
+"cells": 7231
+},
+{
+"label": "L4/5 intratelencephalic projecting glutamatergic neuron",
+"cells": 7153
+},
+{
+"label": "epithelial cell of proximal tubule segment 3",
+"cells": 7082
+},
+{
+"label": "smooth muscle cell of the pulmonary artery",
+"cells": 7016
+},
+{
+"label": "retinal blood vessel endothelial cell",
+"cells": 6937
+},
+{
+"label": "hematopoietic oligopotent progenitor cell",
+"cells": 6718
+},
+{
+"label": "chondroblast",
+"cells": 6712
+},
+{
+"label": "colon endothelial cell",
+"cells": 6665
+},
+{
+"label": "T-helper 1 cell",
+"cells": 6653
+},
+{
+"label": "intestinal tuft cell",
+"cells": 6650
+},
+{
+"label": "glomerular capillary endothelial cell",
+"cells": 6645
+},
+{
+"label": "activated CD8-positive, alpha-beta T cell, human",
+"cells": 6638
+},
+{
+"label": "early promyelocyte",
+"cells": 6528
+},
+{
+"label": "GABAergic interneuron",
+"cells": 6453
+},
+{
+"label": "transit amplifying cell of small intestine",
+"cells": 6439
+},
+{
+"label": "kidney inner medulla collecting duct epithelial cell",
+"cells": 6351
+},
+{
+"label": "kidney collecting duct alpha-intercalated cell",
+"cells": 6302
+},
+{
+"label": "peripheral nervous system neuron",
+"cells": 6195
+},
+{
+"label": "anterior lens cell",
+"cells": 6160
+},
+{
+"label": "ON-blue cone bipolar cell",
+"cells": 6147
+},
+{
+"label": "tendon cell",
+"cells": 6137
+},
+{
+"label": "type G enteroendocrine cell",
+"cells": 6111
+},
+{
+"label": "skeletal muscle fibroblast",
+"cells": 5913
+},
+{
+"label": "renal medullary fibroblast",
+"cells": 5902
+},
+{
+"label": "immature astrocyte",
+"cells": 5891
+},
+{
+"label": "paneth cell of epithelium of small intestine",
+"cells": 5776
+},
+{
+"label": "type I NK T cell",
+"cells": 5759
+},
+{
+"label": "neuroplacodal cell",
+"cells": 5711
+},
+{
+"label": "vasa recta cell",
+"cells": 5698
+},
+{
+"label": "Leydig cell",
+"cells": 5696
+},
+{
+"label": "intraepithelial lymphocyte",
+"cells": 5663
+},
+{
+"label": "Schwann cell precursor",
+"cells": 5652
+},
+{
+"label": "double negative T regulatory cell",
+"cells": 5636
+},
+{
+"label": "epithelial cell of exocrine pancreas",
+"cells": 5568
+},
+{
+"label": "basophil",
+"cells": 5564
+},
+{
+"label": "adventitial fibroblast",
+"cells": 5564
+},
+{
+"label": "secondary crest myofibroblast",
+"cells": 5525
+},
+{
+"label": "inhibitory motor neuron",
+"cells": 5500
+},
+{
+"label": "tuft cell",
+"cells": 5484
+},
+{
+"label": "brush cell of tracheobronchial tree",
+"cells": 5431
+},
+{
+"label": "cerebellar granule cell precursor",
+"cells": 5391
+},
+{
+"label": "pre-conventional dendritic cell",
+"cells": 5296
+},
+{
+"label": "lens epithelial cell",
+"cells": 5276
+},
+{
+"label": "immature NK T cell",
+"cells": 5258
+},
+{
+"label": "basophilic erythroblast",
+"cells": 5253
+},
+{
+"label": "umbrella cell of urothelium",
+"cells": 5238
+},
+{
+"label": "odontoblast",
+"cells": 5179
+},
+{
+"label": "mature conventional dendritic cell",
+"cells": 5166
+},
+{
+"label": "seromucus secreting cell",
+"cells": 5088
+},
+{
+"label": "contractile cell",
+"cells": 5078
+},
+{
+"label": "polychromatophilic erythroblast",
+"cells": 5061
+},
+{
+"label": "renal alpha-intercalated cell",
+"cells": 5045
+},
+{
+"label": "mesothelial cell of epicardium",
+"cells": 5037
+},
+{
+"label": "pulmonary neuroendocrine cell",
+"cells": 4995
+},
+{
+"label": "osteoclast",
+"cells": 4986
+},
+{
+"label": "glycinergic neuron",
+"cells": 4916
+},
+{
+"label": "pancreatic PP cell",
+"cells": 4908
+},
+{
+"label": "oogonial cell",
+"cells": 4890
+},
+{
+"label": "mucus secreting cell",
+"cells": 4890
+},
+{
+"label": "sympathetic neuron",
+"cells": 4744
+},
+{
+"label": "Axl+ dendritic cell, human",
+"cells": 4728
+},
+{
+"label": "respiratory tract goblet cell",
+"cells": 4688
+},
+{
+"label": "CD14-positive, CD16-low monocyte",
+"cells": 4683
+},
+{
+"label": "large intestine goblet cell",
+"cells": 4671
+},
+{
+"label": "secondary lymphoid organ macrophage",
+"cells": 4633
+},
+{
+"label": "mesenchyme condensation cell",
+"cells": 4630
+},
+{
+"label": "bronchial goblet cell",
+"cells": 4526
+},
+{
+"label": "IgG-negative class switched memory B cell",
+"cells": 4345
+},
+{
+"label": "paraxial cell",
+"cells": 4330
+},
+{
+"label": "myeloid lineage restricted progenitor cell",
+"cells": 4282
+},
+{
+"label": "epithelial cell of uterus",
+"cells": 4251
+},
+{
+"label": "enterocyte of epithelium proper of small intestine",
+"cells": 4245
+},
+{
+"label": "IgG plasmablast",
+"cells": 4242
+},
+{
+"label": "endothelial stalk cell",
+"cells": 4225
+},
+{
+"label": "L6 intratelencephalic projecting glutamatergic neuron of the primary motor cortex",
+"cells": 4206
+},
+{
+"label": "tissue-resident macrophage",
+"cells": 4065
+},
+{
+"label": "renal beta-intercalated cell",
+"cells": 4018
+},
+{
+"label": "suprabasal keratinocyte",
+"cells": 3986
+},
+{
+"label": "extracellular matrix secreting cell",
+"cells": 3942
+},
+{
+"label": "megakaryocyte progenitor cell",
+"cells": 3882
+},
+{
+"label": "orthochromatic erythroblast",
+"cells": 3734
+},
+{
+"label": "lung resident memory CD4-positive, alpha-beta T cell",
+"cells": 3718
+},
+{
+"label": "committed oligodendrocyte precursor",
+"cells": 3687
+},
+{
+"label": "centroblast",
+"cells": 3663
+},
+{
+"label": "neuro-medullary thymic epithelial cell",
+"cells": 3661
+},
+{
+"label": "BEST4+ colonocyte",
+"cells": 3603
+},
+{
+"label": "IgA plasmablast",
+"cells": 3562
+},
+{
+"label": "P/D1 enteroendocrine cell",
+"cells": 3532
+},
+{
+"label": "common dendritic progenitor",
+"cells": 3522
+},
+{
+"label": "mesonephric nephron tubule epithelial cell",
+"cells": 3513
+},
+{
+"label": "epidermal cell",
+"cells": 3500
+},
+{
+"label": "stromal cell of endometrium",
+"cells": 3494
+},
+{
+"label": "myoblast",
+"cells": 3490
+},
+{
+"label": "kidney connecting tubule principal cell",
+"cells": 3471
+},
+{
+"label": "lung microvascular endothelial cell",
+"cells": 3430
+},
+{
+"label": "angiogenic pericyte",
+"cells": 3396
+},
+{
+"label": "intestinal crypt stem cell of small intestine",
+"cells": 3342
+},
+{
+"label": "basophil mast progenitor cell",
+"cells": 3276
+},
+{
+"label": "vasa recta ascending limb cell",
+"cells": 3170
+},
+{
+"label": "urothelial cell",
+"cells": 3158
+},
+{
+"label": "immature neutrophil",
+"cells": 3150
+},
+{
+"label": "fibroblast of connective tissue of glandular part of prostate",
+"cells": 3106
+},
+{
+"label": "neutrophil progenitor cell",
+"cells": 3105
+},
+{
+"label": "migratory enteric neural crest cell",
+"cells": 2969
+},
+{
+"label": "connective tissue cell",
+"cells": 2950
+},
+{
+"label": "smooth muscle myoblast",
+"cells": 2938
+},
+{
+"label": "mesothelial cell of pleura",
+"cells": 2931
+},
+{
+"label": "brainstem motor neuron",
+"cells": 2849
+},
+{
+"label": "mucus secreting cell of bronchus submucosal gland",
+"cells": 2829
+},
+{
+"label": "melanocyte of skin",
+"cells": 2760
+},
+{
+"label": "myometrial cell",
+"cells": 2751
+},
+{
+"label": "sensory neuron of dorsal root ganglion",
+"cells": 2735
+},
+{
+"label": "meningeal macrophage",
+"cells": 2681
+},
+{
+"label": "pulmonary ionocyte",
+"cells": 2673
+},
+{
+"label": "lung goblet cell",
+"cells": 2664
+},
+{
+"label": "lung megakaryocyte",
+"cells": 2650
+},
+{
+"label": "endothelial cell of coronary artery",
+"cells": 2605
+},
+{
+"label": "eurydendroid cell",
+"cells": 2602
+},
+{
+"label": "hypothalamus cell",
+"cells": 2564
+},
+{
+"label": "salivary gland cell",
+"cells": 2550
+},
+{
+"label": "neuronal receptor cell",
+"cells": 2502
+},
+{
+"label": "neuronal-restricted precursor",
+"cells": 2488
+},
+{
+"label": "cerebellar neuron",
+"cells": 2418
+},
+{
+"label": "CD22-positive, CD38-low small pre-B cell",
+"cells": 2412
+},
+{
+"label": "medial ganglionic eminence derived interneuron",
+"cells": 2386
+},
+{
+"label": "airway submucosal gland duct basal cell",
+"cells": 2368
+},
+{
+"label": "myo-medullary thymic epithelial cell",
+"cells": 2337
+},
+{
+"label": "type X enteroendocrine cell",
+"cells": 2289
+},
+{
+"label": "mature neutrophil",
+"cells": 2279
+},
+{
+"label": "mesothelial cell of dura mater",
+"cells": 2238
+},
+{
+"label": "CD34-positive, CD38-negative hematopoietic stem cell",
+"cells": 2238
+},
+{
+"label": "smooth muscle cell of sphincter of pupil",
+"cells": 2221
+},
+{
+"label": "fetal pre-type II pulmonary alveolar epithelial cell",
+"cells": 2216
+},
+{
+"label": "tracheobronchial goblet cell",
+"cells": 2158
+},
+{
+"label": "diffuse bipolar 4a cell",
+"cells": 2117
+},
+{
+"label": "late promyelocyte",
+"cells": 2079
+},
+{
+"label": "diffuse bipolar 5 cell",
+"cells": 2075
+},
+{
+"label": "IgG memory B cell",
+"cells": 2048
+},
+{
+"label": "medullary thymic epithelial cell type 3",
+"cells": 1997
+},
+{
+"label": "neuron associated cell",
+"cells": 1981
+},
+{
+"label": "epithelial cell of thymus",
+"cells": 1972
+},
+{
+"label": "cycling pulmonary alveolar type 2 cell",
+"cells": 1968
+},
+{
+"label": "embryonic blood vessel endothelial progenitor cell",
+"cells": 1954
+},
+{
+"label": "medullary thymic epithelial cell type 2",
+"cells": 1878
+},
+{
+"label": "fibrocyte",
+"cells": 1869
+},
+{
+"label": "glomerular endothelial cell",
+"cells": 1866
+},
+{
+"label": "cerebellum glutamatergic neuron",
+"cells": 1846
+},
+{
+"label": "cycling myeloid cell",
+"cells": 1821
+},
+{
+"label": "early T lineage precursor",
+"cells": 1770
+},
+{
+"label": "ganglion interneuron",
+"cells": 1715
+},
+{
+"label": "bronchial smooth muscle cell",
+"cells": 1699
+},
+{
+"label": "secondary lens fiber",
+"cells": 1677
+},
+{
+"label": "enteroendocrine cell of small intestine",
+"cells": 1662
+},
+{
+"label": "pinealocyte",
+"cells": 1654
+},
+{
+"label": "proerythroblast",
+"cells": 1627
+},
+{
+"label": "CD8-alpha alpha positive, gamma-delta intraepithelial T cell",
+"cells": 1620
+},
+{
+"label": "mucus secreting cell of tracheobronchial tree submucosal gland",
+"cells": 1590
+},
+{
+"label": "stromal cell of pancreas",
+"cells": 1582
+},
+{
+"label": "kidney capillary endothelial cell",
+"cells": 1580
+},
+{
+"label": "vasa recta descending limb cell",
+"cells": 1580
+},
+{
+"label": "neurectodermal cell",
+"cells": 1558
+},
+{
+"label": "bipolar neuron",
+"cells": 1499
+},
+{
+"label": "pancreatic epsilon cell",
+"cells": 1490
+},
+{
+"label": "trophoblast giant cell",
+"cells": 1486
+},
+{
+"label": "perineurial cell",
+"cells": 1481
+},
+{
+"label": "liver dendritic cell",
+"cells": 1441
+},
+{
+"label": "collagen secreting cell",
+"cells": 1421
+},
+{
+"label": "neuroendocrine cell of epithelium of lobar bronchus",
+"cells": 1407
+},
+{
+"label": "paneth cell of colon",
+"cells": 1393
+},
+{
+"label": "fetal cardiomyocyte",
+"cells": 1391
+},
+{
+"label": "type L enteroendocrine cell",
+"cells": 1377
+},
+{
+"label": "mucous cell of stomach",
+"cells": 1375
+},
+{
+"label": "arachnoid barrier cell",
+"cells": 1362
+},
+{
+"label": "intestinal crypt stem cell of large intestine",
+"cells": 1337
+},
+{
+"label": "neuron of the forebrain",
+"cells": 1332
+},
+{
+"label": "macula densa epithelial cell",
+"cells": 1329
+},
+{
+"label": "tip cell",
+"cells": 1294
+},
+{
+"label": "Merkel cell",
+"cells": 1282
+},
+{
+"label": "deuterosomal cell",
+"cells": 1277
+},
+{
+"label": "colon macrophage",
+"cells": 1252
+},
+{
+"label": "MHC-II-positive classical monocyte",
+"cells": 1249
+},
+{
+"label": "enterocyte of epithelium proper of jejunum",
+"cells": 1215
+},
+{
+"label": "L5/6 near-projecting glutamatergic neuron of the primary motor cortex",
+"cells": 1215
+},
+{
+"label": "smooth muscle cell of large intestine",
+"cells": 1197
+},
+{
+"label": "centrocyte",
+"cells": 1197
+},
+{
+"label": "cycling plasma cell",
+"cells": 1197
+},
+{
+"label": "stem cell of epidermis",
+"cells": 1187
+},
+{
+"label": "lymphocyte of B lineage",
+"cells": 1170
+},
+{
+"label": "papillary tips cell",
+"cells": 1169
+},
+{
+"label": "cycling stromal cell",
+"cells": 1162
+},
+{
+"label": "kidney loop of Henle cortical thick ascending limb epithelial cell",
+"cells": 1156
+},
+{
+"label": "OFF retinal ganglion cell",
+"cells": 1124
+},
+{
+"label": "kidney arterial blood vessel cell",
+"cells": 1121
+},
+{
+"label": "B-1b B cell",
+"cells": 1110
+},
+{
+"label": "CD56-positive, CD161-positive immature natural killer cell, human",
+"cells": 1108
+},
+{
+"label": "lens fiber cell",
+"cells": 1101
+},
+{
+"label": "serotonergic neuron",
+"cells": 1094
+},
+{
+"label": "pre-B-I cell",
+"cells": 1084
+},
+{
+"label": "A2 amacrine cell",
+"cells": 1070
+},
+{
+"label": "CD8-alpha-beta-positive, alpha-beta intraepithelial T cell",
+"cells": 1063
+},
+{
+"label": "primary sensory neuron (sensu Teleostei)",
+"cells": 1030
+},
+{
+"label": "kidney loop of Henle descending limb epithelial cell",
+"cells": 1011
+},
+{
+"label": "airway submucosal gland collecting duct epithelial cell",
+"cells": 1009
+},
+{
+"label": "intestinal enteroendocrine cell",
+"cells": 1007
+},
+{
+"label": "type A enteroendocrine cell",
+"cells": 998
+},
+{
+"label": "serous cell of epithelium of trachea",
+"cells": 978
+},
+{
+"label": "male germ cell",
+"cells": 969
+},
+{
+"label": "striated cell of salivary gland",
+"cells": 968
+},
+{
+"label": "eosinophil",
+"cells": 935
+},
+{
+"label": "glioblast (sensu Vertebrata)",
+"cells": 934
+},
+{
+"label": "smooth muscle cell of the brain vasculature",
+"cells": 920
+},
+{
+"label": "L3 intratelencephalic projecting glutamatergic neuron",
+"cells": 912
+},
+{
+"label": "interstitial cell",
+"cells": 905
+},
+{
+"label": "articular chondrocyte",
+"cells": 868
+},
+{
+"label": "sebocyte",
+"cells": 854
+},
+{
+"label": "neural crest derived neuron",
+"cells": 838
+},
+{
+"label": "T follicular regulatory cell",
+"cells": 831
+},
+{
+"label": "lung perichondrial fibroblast",
+"cells": 822
+},
+{
+"label": "keratinizing barrier epithelial cell",
+"cells": 820
+},
+{
+"label": "metallothionein-positive alveolar macrophage",
+"cells": 820
+},
+{
+"label": "peridermal cell",
+"cells": 817
+},
+{
+"label": "supporting cell of vestibular epithelium",
+"cells": 810
+},
+{
+"label": "gastrointestinal tract (lamina propria) macrophage of large intestine",
+"cells": 807
+},
+{
+"label": "epithelial cell of proximal tubule segment 1",
+"cells": 777
+},
+{
+"label": "oocyte",
+"cells": 776
+},
+{
+"label": "ILC1, human",
+"cells": 776
+},
+{
+"label": "erythroid progenitor cell, mammalian",
+"cells": 773
+},
+{
+"label": "PP cell",
+"cells": 761
+},
+{
+"label": "visceromotor neuron",
+"cells": 756
+},
+{
+"label": "CD4-negative, CD8-negative, alpha-beta intraepithelial T cell",
+"cells": 755
+},
+{
+"label": "epithelial cell of stratum germinativum of esophagus",
+"cells": 754
+},
+{
+"label": "dermis microvascular lymphatic vessel endothelial cell",
+"cells": 742
+},
+{
+"label": "basal cell of epithelium of bronchus",
+"cells": 739
+},
+{
+"label": "NKp44-negative group 3 innate lymphoid cell, human",
+"cells": 739
+},
+{
+"label": "preosteoblast",
+"cells": 736
+},
+{
+"label": "TAC3-positive striatal interneuron",
+"cells": 728
+},
+{
+"label": "serous cell of epithelium of lobular bronchiole",
+"cells": 719
+},
+{
+"label": "bronchial epithelial cell",
+"cells": 693
+},
+{
+"label": "prostate stromal cell",
+"cells": 691
+},
+{
+"label": "epithelial cell of glomerular capsule",
+"cells": 651
+},
+{
+"label": "premigratory neural crest cell",
+"cells": 644
+},
+{
+"label": "stromal cell of lamina propria of small intestine",
+"cells": 640
+},
+{
+"label": "bronchiolar smooth muscle cell",
+"cells": 634
+},
+{
+"label": "enteroendocrine cell of colon",
+"cells": 624
+},
+{
+"label": "antibody secreting cell",
+"cells": 619
+},
+{
+"label": "medium spiny neuron",
+"cells": 617
+},
+{
+"label": "choroid plexus macrophage",
+"cells": 612
+},
+{
+"label": "NKp44-positive group 3 innate lymphoid cell, human",
+"cells": 611
+},
+{
+"label": "tongue muscle cell",
+"cells": 606
+},
+{
+"label": "endothelial cell of sinusoid",
+"cells": 592
+},
+{
+"label": "precursor cell",
+"cells": 567
+},
+{
+"label": "B-1a B cell",
+"cells": 558
+},
+{
+"label": "CD34-positive, CD56-positive, CD117-positive common innate lymphoid precursor, human",
+"cells": 555
+},
+{
+"label": "effector T cell",
+"cells": 554
+},
+{
+"label": "ON retinal ganglion cell",
+"cells": 549
+},
+{
+"label": "kidney collecting duct cell",
+"cells": 545
+},
+{
+"label": "adipocyte of epicardial fat of left ventricle",
+"cells": 523
+},
+{
+"label": "intercalated cell of salivary gland",
+"cells": 518
+},
+{
+"label": "nephron tubule epithelial cell",
+"cells": 495
+},
+{
+"label": "chandelier cell",
+"cells": 490
+},
+{
+"label": "parasol ganglion cell of retina",
+"cells": 446
+},
+{
+"label": "reticular cell",
+"cells": 421
+},
+{
+"label": "epithelial fate stem cell",
+"cells": 417
+},
+{
+"label": "metamyelocyte",
+"cells": 412
+},
+{
+"label": "mesenchymal lymphangioblast",
+"cells": 410
+},
+{
+"label": "germinal center T cell",
+"cells": 391
+},
+{
+"label": "chorionic trophoblast cell",
+"cells": 366
+},
+{
+"label": "diffuse bipolar 4b cell",
+"cells": 357
+},
+{
+"label": "granzyme K-associated CD8 T cell",
+"cells": 345
+},
+{
+"label": "epithelial cell of small intestine",
+"cells": 339
+},
+{
+"label": "progenitor cell of endocrine pancreas",
+"cells": 336
+},
+{
+"label": "cardiac mesenchymal cell",
+"cells": 317
+},
+{
+"label": "thalamic excitatory neuron",
+"cells": 312
+},
+{
+"label": "conjunctiva goblet cell",
+"cells": 312
+},
+{
+"label": "enucleated reticulocyte",
+"cells": 304
+},
+{
+"label": "epithelial cell of sweat gland",
+"cells": 301
+},
+{
+"label": "granular cell of epidermis",
+"cells": 281
+},
+{
+"label": "smooth muscle cell of small intestine",
+"cells": 255
+},
+{
+"label": "muscle precursor cell",
+"cells": 254
+},
+{
+"label": "mononuclear leukocyte",
+"cells": 242
+},
+{
+"label": "sebaceous gland cell",
+"cells": 233
+},
+{
+"label": "mesothelial fibroblast",
+"cells": 232
+},
+{
+"label": "ileal goblet cell",
+"cells": 230
+},
+{
+"label": "type I enteroendocrine cell",
+"cells": 227
+},
+{
+"label": "type D enteroendocrine cell",
+"cells": 226
+},
+{
+"label": "immature T cell",
+"cells": 216
+},
+{
+"label": "stromal cell of bone marrow",
+"cells": 213
+},
+{
+"label": "enucleate erythrocyte",
+"cells": 202
+},
+{
+"label": "peritubular myoid cell",
+"cells": 201
+},
+{
+"label": "spermatogonium",
+"cells": 192
+},
+{
+"label": "kidney outer medulla collecting duct intercalated cell",
+"cells": 190
+},
+{
+"label": "kidney resident macrophage",
+"cells": 174
+},
+{
+"label": "multiciliated epithelial cell of the bronchus",
+"cells": 159
+},
+{
+"label": "adult skeletal muscle myoblast",
+"cells": 154
+},
+{
+"label": "type II NK T cell",
+"cells": 147
+},
+{
+"label": "vestibular dark cell",
+"cells": 147
+},
+{
+"label": "noradrenergic cell",
+"cells": 138
+},
+{
+"label": "peripheral blood mononuclear cell",
+"cells": 131
+},
+{
+"label": "columnar/cuboidal epithelial cell",
+"cells": 129
+},
+{
+"label": "basal cell of epithelium of lobular bronchiole",
+"cells": 121
+},
+{
+"label": "epithelial cell of distal tubule",
+"cells": 120
+},
+{
+"label": "mechanoreceptor cell",
+"cells": 108
+},
+{
+"label": "sst chodl GABAergic cortical interneuron",
+"cells": 100
+},
+{
+"label": "group 2 innate lymphoid cell, human",
+"cells": 93
+},
+{
+"label": "inflammatory cell",
+"cells": 91
+},
+{
+"label": "GIP cell",
+"cells": 83
+},
+{
+"label": "myoepithelial cell of bronchus submucosal gland",
+"cells": 82
+},
+{
+"label": "enterochromaffin-like cell",
+"cells": 81
+},
+{
+"label": "primary cultured cell",
+"cells": 80
+},
+{
+"label": "glomerular mesangial cell",
+"cells": 78
+},
+{
+"label": "bone marrow cell",
+"cells": 72
+},
+{
+"label": "immature Schwann cell",
+"cells": 66
+},
+{
+"label": "immature microglial cell",
+"cells": 63
+},
+{
+"label": "brush cell of trachea",
+"cells": 61
+},
+{
+"label": "T-helper 2 cell",
+"cells": 55
+},
+{
+"label": "smooth muscle fiber of ileum",
+"cells": 54
+},
+{
+"label": "retinal cell",
+"cells": 54
+},
+{
+"label": "endosteal cell",
+"cells": 54
+},
+{
+"label": "prostate neuroendocrine cell",
+"cells": 48
+},
+{
+"label": "epidermal Langerhans cell",
+"cells": 48
+},
+{
+"label": "kidney pelvis urothelial cell",
+"cells": 48
+},
+{
+"label": "kidney cortex collecting duct epithelial cell",
+"cells": 45
+},
+{
+"label": "serous cell of epithelium of bronchus",
+"cells": 45
+},
+{
+"label": "type N enteroendocrine cell",
+"cells": 44
+},
+{
+"label": "pre-natural killer cell",
+"cells": 39
+},
+{
+"label": "embryonic stem cell",
+"cells": 34
+},
+{
+"label": "macrophage dendritic cell progenitor",
+"cells": 31
+},
+{
+"label": "hypertrophic chondrocyte",
+"cells": 28
+},
+{
+"label": "immature natural killer cell",
+"cells": 26
+},
+{
+"label": "spinal cord radial glial cell",
+"cells": 24
+},
+{
+"label": "microfold cell of epithelium of small intestine",
+"cells": 19
+},
+{
+"label": "pancreatic endocrine cell",
+"cells": 8
+}
+]

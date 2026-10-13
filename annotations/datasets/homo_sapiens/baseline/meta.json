@@ -1,0 +1,14 @@
+{
+ "census_version": "2025-11-08",
+ "organism": "Homo sapiens",
+ "namespace": "homo_sapiens",
+ "n_cells": 158982719,
+ "n_cell_type": 898,
+ "scan": {
+  "source": "local soma (tiledb)",
+  "scanned_at": "2026-10-13",
+  "env": "conda singlerust2 (tiledb 0.36.0)",
+  "script": "分块 value_counts（5M/块）——02 册 §1 可重放"
+ },
+ "served_universe_note": "ln 服务集合（616 集）为 census 筛选子集——覆盖率对账侧表见 S1/Q4"
+}
