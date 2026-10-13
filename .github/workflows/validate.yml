@@ -58,11 +58,11 @@ jobs:
           for line in out.splitlines():
               if '\x00' in line:
                   _sha, email, _an = (line.split('\x00', 2) + [''])[:3]
-                  m = re.match(r'^(d+)+[^@]+@users.noreply.github.com$', email)
+                  m = re.match(r'^(\d+)\+[^@]+@users\.noreply\.github\.com$', email)
                   cur = {'uid': m.group(1) if m else None}
               elif cur is not None and line.strip():
                   path = line.strip()
-                  um = re.match(r'^annotations/datasets/[a-z0-9_]+/users/ghid_(d+)/', path)
+                  um = re.match(r'^annotations/datasets/[a-z0-9_]+/users/ghid_(\d+)/', path)
                   if um:
                       if event_name == 'push' and (cur['uid'] is None or cur['uid'] != um.group(1)):
                           bad.append(('author 非 noreply 身份或写了非本人目录', path))

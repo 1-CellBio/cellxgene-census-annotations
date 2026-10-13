@@ -25,9 +25,9 @@ import sys
 JOIN_ID_MAX = 19
 JOIN_ID_RE = re.compile(r'^[0-9]{1,' + str(JOIN_ID_MAX) + r'}$')
 FIELD_RE = re.compile(r'^[a-z0-9_]+$')
-SHARD_FILE_RE = re.compile(r'^([a-z0-9_]{1,64}).[0-9]{3}.tsv$')
-USER_DIR_RE = re.compile(r'^annotations/datasets/([a-z0-9_]+)/users/ghid_(d+)/$')
-MANIFEST_RE = re.compile(r'^annotations/datasets/([a-z0-9_]+)/users/ghid_(d+)/manifest.json$')
+SHARD_FILE_RE = re.compile(r'^([a-z0-9_]{1,64})\.[0-9]{3}\.tsv$')
+USER_DIR_RE = re.compile(r'^annotations/datasets/([a-z0-9_]+)/users/ghid_(\d+)/$')
+MANIFEST_RE = re.compile(r'^annotations/datasets/([a-z0-9_]+)/users/ghid_(\d+)/manifest\.json$')
 MANIFEST_MAX = 262144
 PUSHES_KEPT = 200
 PUSH_COMMENT_MAX = 500
