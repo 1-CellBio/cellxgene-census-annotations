@@ -1,0 +1,193 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "manifest.schema.json",
+  "title": "AnnotCommunity per-user manifest",
+  "type": "object",
+  "required": [
+    "version",
+    "username",
+    "githubUserId",
+    "login",
+    "updatedAt",
+    "fields",
+    "pushes"
+  ],
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "username": {
+      "type": "string",
+      "pattern": "^ghid_[0-9]+$"
+    },
+    "githubUserId": {
+      "type": "integer",
+      "minimum": 1
+    },
+    "login": {
+      "type": "string"
+    },
+    "orcid": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "censusVersion": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "updatedAt": {
+      "type": "string"
+    },
+    "fields": {
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^[a-z0-9_]+$",
+        "maxLength": 64
+      },
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "rows",
+          "shards",
+          "labels",
+          "origin"
+        ],
+        "properties": {
+          "rows": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 1000000
+          },
+          "shards": {
+            "type": "array",
+            "maxItems": 50,
+            "items": {
+              "type": "object",
+              "required": [
+                "file",
+                "rows",
+                "sha256",
+                "minKey",
+                "maxKey"
+              ],
+              "properties": {
+                "file": {
+                  "type": "string",
+                  "pattern": "^[a-z0-9_]+\\.[0-9]{3}\\.tsv$"
+                },
+                "rows": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 20000
+                },
+                "sha256": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                },
+                "minKey": {
+                  "type": "string",
+                  "pattern": "^[0-9]{1,19}$"
+                },
+                "maxKey": {
+                  "type": "string",
+                  "pattern": "^[0-9]{1,19}$"
+                }
+              }
+            }
+          },
+          "labels": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "integer"
+            }
+          },
+          "labelMarkers": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "array",
+              "maxItems": 20,
+              "items": {
+                "type": "string"
+              }
+            }
+          },
+          "origin": {
+            "$ref": "origin.schema.json"
+          },
+          "bloom": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "properties": {
+              "m": {
+                "type": "integer"
+              },
+              "k": {
+                "type": "integer"
+              },
+              "n": {
+                "type": "integer"
+              },
+              "advisory": {
+                "type": "boolean"
+              }
+            }
+          },
+          "lastPushId": {
+            "type": "string"
+          }
+        }
+      }
+    },
+    "slice": {
+      "type": [
+        "object",
+        "null"
+      ]
+    },
+    "pushes": {
+      "type": "array",
+      "maxItems": 200,
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "at",
+          "fields"
+        ],
+        "properties": {
+          "id": {
+            "type": "string"
+          },
+          "at": {
+            "type": "string"
+          },
+          "fields": {
+            "type": "array",
+            "items": {
+              "type": "string"
+            }
+          },
+          "comment": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "maxLength": 500
+          },
+          "commit": {
+            "type": [
+              "string",
+              "null"
+            ]
+          }
+        }
+      }
+    }
+  }
+}

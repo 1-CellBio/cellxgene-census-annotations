@@ -1,0 +1,86 @@
+name: validate
+on:
+  push:
+    paths: ['annotations/**', 'scripts/**', 'annotations/schemas/**', 'annotations/config.json']
+  pull_request:
+    paths: ['annotations/**', 'scripts/**', 'annotations/schemas/**', 'annotations/config.json']
+  workflow_dispatch: {}
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0   # provenance 需要完整范围（push base..head）
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Structural validation（all-or-nothing）
+        run: python scripts/validate.py .
+      - name: Provenance（author noreply-id == 目标目录 ghid；治理文件走维护者白名单）
+        env:
+          GH_EVENT: ${{ toJson(github.event) }}
+          MAINTAINERS: ${{ vars.MAINTAINERS }}
+          ACTOR: ${{ github.actor }}
+          EVENT_NAME: ${{ github.event_name }}
+          BASE_SHA: ${{ github.event.pull_request.base.sha || github.event.before }}
+          HEAD_SHA: ${{ github.event.pull_request.head.sha || github.sha }}
+        run: |
+          python - <<'PY'
+          import json, os, re, subprocess, sys
+
+          ev = json.loads(os.environ['GH_EVENT'])
+          event_name = os.environ['EVENT_NAME']
+          maintainers = {m.strip().lower() for m in (os.environ.get('MAINTAINERS') or '').split(',') if m.strip()}
+          actor = (os.environ.get('ACTOR') or '').lower()
+          base = os.environ.get('BASE_SHA') or ''
+          head = os.environ.get('HEAD_SHA') or ''
+          principal_id = None
+          if event_name == 'push':
+              principal_id = str((ev.get('pusher') or {}).get('id') or '')
+          elif event_name == 'pull_request':
+              principal_id = str(((ev.get('pull_request') or {}).get('user') or {}).get('id') or '')
+
+          # 无 -N 窗口（审查 P2：>20 commit 直推逃逸）；before 全零=新分支全历史
+          rng = head if (not base or set(base) == {'0'}) else f'{base}..{head}'
+          out = subprocess.run(
+              ['git', 'log', '--no-merges', '--name-only', '--pretty=format:%H%x00%ae%x00%an', rng],
+              capture_output=True, text=True,
+          ).stdout
+
+          bad = []
+          governance_touched = set()
+          cur = None
+          for line in out.splitlines():
+              if '\x00' in line:
+                  _sha, email, _an = (line.split('\x00', 2) + [''])[:3]
+                  m = re.match(r'^(d+)+[^@]+@users.noreply.github.com$', email)
+                  cur = {'uid': m.group(1) if m else None}
+              elif cur is not None and line.strip():
+                  path = line.strip()
+                  um = re.match(r'^annotations/datasets/[a-z0-9_]+/users/ghid_(d+)/', path)
+                  if um:
+                      if event_name == 'push' and (cur['uid'] is None or cur['uid'] != um.group(1)):
+                          bad.append(('author 非 noreply 身份或写了非本人目录', path))
+                      if event_name == 'pull_request' and principal_id and um.group(1) != principal_id:
+                          bad.append(('PR 作者 ghid 与改动目录不符', path))
+                  elif path.startswith('annotations/'):
+                      governance_touched.add(path)
+
+          if governance_touched:
+              # 治理面白名单（02 §9「例外清单显式落仓」：repo variable MAINTAINERS；
+              # 未配置 = 拒绝一切治理改动，fail-closed）
+              if not maintainers or actor not in maintainers:
+                  for gp in sorted(governance_touched)[:10]:
+                      bad.append((f'治理文件改动需维护者白名单（MAINTAINERS 未配置或 {actor} 不在清单）', gp))
+
+          if bad:
+              for why, pth in bad[:20]:
+                  print(f'❌ provenance: {why}: {pth}', file=sys.stderr)
+              sys.exit(1)
+          print(f'✅ provenance 通过（范围 {rng}，事件 {event_name}）')
+          PY

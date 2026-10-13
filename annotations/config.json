@@ -1,0 +1,32 @@
+{
+  "version": 1,
+  "repoPolicy": {
+    "shardMaxRows": 20000,
+    "shardMaxBytes": 1048576,
+    "shardsPerField": 50,
+    "rowsPerField": 1000000,
+    "fieldsPerUser": 5,
+    "filesPerPush": 110,
+    "labelMaxCodePoints": 120,
+    "joinIdMaxCodePoints": 19,
+    "pushCommentMaxCodePoints": 500,
+    "categoryCommentMaxCodePoints": 500,
+    "commentsPerCategory": 200,
+    "commentsFileMaxBytes": 1048576,
+    "manifestMaxBytes": 262144,
+    "pushesKept": 200,
+    "dataPushesPerHour": 6,
+    "commentPushesPerHour": 20,
+    "joinIdSourceColumn": "soma_joinid"
+  },
+  "datasets": {
+    "homo_sapiens": {
+      "contributors": 0,
+      "fields": 0
+    },
+    "mus_musculus": {
+      "contributors": 0,
+      "fields": 0
+    }
+  }
+}

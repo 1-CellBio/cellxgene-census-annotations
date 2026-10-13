@@ -1,0 +1,56 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "origin.schema.json",
+  "title": "AnnotCommunity field origin（02 册 §6 四类）",
+  "type": "object",
+  "required": [
+    "type"
+  ],
+  "properties": {
+    "type": {
+      "enum": [
+        "human",
+        "ai",
+        "ai+human",
+        "community"
+      ]
+    },
+    "model": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "generatedAt": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "derivedFrom": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[a-z0-9_]+$"
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "derivedFrom": {
+            "type": "string"
+          }
+        }
+      },
+      "then": {
+        "properties": {
+          "type": {
+            "const": "ai+human"
+          }
+        }
+      }
+    }
+  ]
+}

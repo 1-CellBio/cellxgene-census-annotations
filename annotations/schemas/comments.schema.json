@@ -1,0 +1,58 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "comments.schema.json",
+  "title": "AnnotCommunity 类别评论 sidecar（D25）",
+  "type": "object",
+  "required": [
+    "version",
+    "field",
+    "categories"
+  ],
+  "properties": {
+    "version": {
+      "const": 1
+    },
+    "field": {
+      "type": "string",
+      "pattern": "^[a-z0-9_]+$"
+    },
+    "categories": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "array",
+        "maxItems": 200,
+        "items": {
+          "type": "object",
+          "required": [
+            "id",
+            "text",
+            "createdAt",
+            "deleted"
+          ],
+          "properties": {
+            "id": {
+              "type": "string",
+              "pattern": "^c_[0-9a-f]+$"
+            },
+            "text": {
+              "type": "string",
+              "maxLength": 500
+            },
+            "createdAt": {
+              "type": "string"
+            },
+            "editedAt": {
+              "type": [
+                "string",
+                "null"
+              ]
+            },
+            "deleted": {
+              "type": "boolean"
+            }
+          }
+        }
+      }
+    }
+  }
+}

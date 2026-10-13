@@ -1,0 +1,1 @@
+# TSV 明细契约（与 1Cellbio 服务端 annotCommunityContract 同源生成——改数值先改契约再重生成）\n\n- 表头固定 `join_id\tlabel`；UTF-8 无 BOM；LF 行尾；按 join_id 数值序定序\n- join_id = str(soma_joinid)：纯十进制、≤19 码点、无前导零\n- label：≤120 码点（sanitize 后）\n- 分片双红线：≤20000 行且序列化 ≤1048576B；<field>.%03d.tsv\n- 每字段 ≤50 分片（=单人单字段 ≤1000000 行红线）\n\n
