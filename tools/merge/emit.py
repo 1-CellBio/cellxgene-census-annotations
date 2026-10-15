@@ -5,9 +5,12 @@ decisions.json 形状（04 册 §2.2）：
   { "targetVersion": 4,
     "groups": { "T cell": "T cell (coarse, needs split)", "unknown": "unknown" },
     "splits": [ { "ct": "T cell", "label": "CD8-positive, alpha-beta T cell",
-                  "from": { "ghid": "ghid_222123526", "pushId": "p_x", "block": 12 },
+                  "from": { "ghid": "ghid_222123526", "pushId": "x", "block": 12 },
                   "note": "采纳该用户拆分" } ],
-    "include": [ { "ghid": "ghid_…", "pushId": "p_old", "as": "pinned" } ] }
+    "include": [ { "ghid": "ghid_…", "pushId": "old", "as": "pinned" } ] }
+
+pushId 一律写裸 id（如 "x"）——emit 内部以 f'p_{push_id}' 拼 uploads 键（历史版
+本档示例误带 p_ 前缀，照抄会查不到上传）。
 
 产出（只写 consensus/community_anno/）：
   v<N+1>/default.json       diff-only 组映射（groups 里 label≠ct 才进；缺席=原始成立）
@@ -24,6 +27,7 @@ import hashlib
 import json
 import os
 import re
+import shutil
 import sys
 
 SHARD_MAX_ROWS = 20000
@@ -115,7 +119,12 @@ def emit(repo, namespace, decisions_path):
     mapping = [[ct, label] for ct, label in sorted(groups.items()) if ct != label]
 
     # ── overrides：splits 引用块 → 组块分片（同贡献格式）──────────────────
-    override_blocks = []
+    # B3：validate.py 要求同分片内块间 (ct,label) 严格字典序且不得重复头——
+    # decisions.splits 是人工书写顺序（顺 report.py 异票降序写 = 天然逆序），写片前
+    # 统一排序；同 (ct,label) 多 split（采纳多贡献者拆分 = 核心场景）合并：joinIds
+    # 并集去重后按 (len,s) 数值序重排（与单块抽取 read_block_joinids 的排序口径一致）。
+    # 完全重复（并集无新增）打印 ⚠ 不拒；fail-closed 引用校验全部原样保留。
+    merged_blocks = {}
     for sp in decisions.get('splits') or []:
         frm = sp.get('from') or {}
         ghid, push_id = frm.get('ghid'), frm.get('pushId')
@@ -126,9 +135,31 @@ def emit(repo, namespace, decisions_path):
         ids = read_block_joinids(repo, namespace, ghid, entry.get('blocksRef'), sp.get('ct'), sp.get('label'))
         if not ids:
             raise SystemExit(f'❌ splits 引用块抽取为空：{ghid}/{push_id} ({sp.get("ct")} / {sp.get("label")})')
-        override_blocks.append({'ct': sp.get('ct'), 'label': sp.get('label'), 'joinIds': ids})
+        key = (sp.get('ct'), sp.get('label'))
+        before = len(merged_blocks.setdefault(key, set()))
+        merged_blocks[key].update(ids)
+        if len(merged_blocks[key]) == before:
+            print(f'   ⚠ 同 (ct,label) split 无新增 id（完全重复）：{key[0]} / {key[1]}')
+    merged_count = len(decisions.get('splits') or []) - len(merged_blocks)
+    override_blocks = [
+        {'ct': k[0], 'label': k[1], 'joinIds': sorted(v, key=lambda s: (len(s), s))}
+        for k, v in sorted(merged_blocks.items())
+    ]
 
     out_dir = os.path.join(cons_dir, f'v{target}')
+    # 上次崩溃残留清理（收窄到目标 vN 目录）：target==current+1 已保证 vN 是尚未发布
+    # 的新版本，残留只可能来自中断的 emit——只清该目录，绝不清整个 consensus/
+    #（历史版本不可动）。
+    if os.path.isdir(out_dir):
+        # 防御（审查 P3）：provenance.json 在场=该版本已到达 emit 终段（甚至可能
+        # current.json 被人工回滚过）——不自动删，拒绝并交人工核实（fail-closed）。
+        if os.path.isfile(os.path.join(out_dir, 'provenance.json')):
+            raise SystemExit(
+                f'❌ 目标目录 v{target} 已含完整 emit 产物（provenance.json 在场）——'
+                f'若为上次中断的残留请人工删除该目录后重跑；若 current.json 曾被回滚'
+                f'请先恢复，不得自动覆盖已发布版本。')
+        shutil.rmtree(out_dir)
+        print(f'   ⚠ 清理上次 emit 的残留目录 v{target}')
     os.makedirs(out_dir, exist_ok=True)
     json.dump({'version': target, 'censusVersion': '2025-11-08', 'map': mapping},
               open(os.path.join(out_dir, 'default.json'), 'w'), ensure_ascii=False, indent=1)
@@ -178,6 +209,9 @@ def emit(repo, namespace, decisions_path):
         fname = f'overrides.{str(si).zfill(3)}.tsv'
         open(os.path.join(out_dir, fname), 'w', encoding='utf-8').write(content)
         for m in meta:
+            # A2 双向锚定：shards 写相对 vN 目录的裸文件名（如 "overrides.000.tsv"）——
+            # 主仓 client（src/services/annotCommunity/client.js getConsensusOverrides）按
+            # overridesRef 所在目录前缀解析分片路径；两侧任何改动须同步。
             ov_index_blocks.append({'ct': m['ct'], 'label': m['label'], 'rows': len(m['ids']), 'shards': [fname]})
 
     if override_files:
@@ -195,6 +229,8 @@ def emit(repo, namespace, decisions_path):
     json.dump({'field': 'community_anno', 'version': target, 'updatedAt': decisions.get('decidedAt') or None},
               open(os.path.join(cons_dir, 'current.json'), 'w'), indent=1)
     print(f'✅ emit v{target}：groups={len(mapping)} splits={len(override_blocks)} contributions={len(contributions)}')
+    if merged_count > 0:
+        print(f'   同 (ct,label) 多 split 合并：{merged_count} 处（joinIds 并集；provenance splits=去重后块数）')
     print(f'   下一步：python3 scripts/validate.py {repo}（终审）→ git add annotations/ && commit')
 
 
