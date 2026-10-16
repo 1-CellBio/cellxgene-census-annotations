@@ -1,0 +1,19 @@
+{
+ "version": 3,
+ "decidedAt": null,
+ "decider": "1-CellBio",
+ "basedOn": {
+  "censusVersion": "2025-11-08",
+  "prevVersion": 2
+ },
+ "contributions": [
+  {
+   "ghid": "ghid_222123526",
+   "pushId": "p_t06wb001",
+   "rows": 15502,
+   "includedAs": "latest"
+  }
+ ],
+ "groupsChanged": 1,
+ "splits": 1
+}
