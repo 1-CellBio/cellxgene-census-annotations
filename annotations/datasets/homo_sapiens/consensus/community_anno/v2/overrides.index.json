@@ -1,0 +1,17 @@
+{
+ "field": "community_anno",
+ "blocks": [
+  {
+   "ct": "CD4-positive, alpha-beta memory T cell",
+   "label": "CD4-positive, alpha-beta T cell",
+   "rows": 50,
+   "shards": [
+    "overrides.000.tsv"
+   ]
+  }
+ ],
+ "totals": {
+  "blocks": 1,
+  "rows": 50
+ }
+}
