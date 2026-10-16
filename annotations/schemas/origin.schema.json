@@ -42,7 +42,10 @@
           "derivedFrom": {
             "type": "string"
           }
-        }
+        },
+        "required": [
+          "derivedFrom"
+        ]
       },
       "then": {
         "properties": {

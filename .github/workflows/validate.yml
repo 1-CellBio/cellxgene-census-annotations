@@ -1,9 +1,9 @@
 name: validate
 on:
   push:
-    paths: ['annotations/**', 'scripts/**', 'annotations/schemas/**', 'annotations/config.json']
+    paths: ['annotations/**', 'scripts/**', 'tools/**', 'annotations/schemas/**', 'annotations/config.json']
   pull_request:
-    paths: ['annotations/**', 'scripts/**', 'annotations/schemas/**', 'annotations/config.json']
+    paths: ['annotations/**', 'scripts/**', 'tools/**', 'annotations/schemas/**', 'annotations/config.json']
   workflow_dispatch: {}
 
 permissions:
@@ -19,7 +19,9 @@ jobs:
       - uses: actions/setup-python@v5
         with:
           python-version: '3.12'
-      - name: Structural validation（all-or-nothing）
+      - name: Install schema deps（B5：schema 实校验；pin 4.23.0 与本地模板演练同版）
+        run: pip install 'jsonschema==4.23.0'
+      - name: Structural + schema validation（all-or-nothing）
         run: python scripts/validate.py .
       - name: Provenance（author noreply-id == 目标目录 ghid；治理文件走维护者白名单）
         env:

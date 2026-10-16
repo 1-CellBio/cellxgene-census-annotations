@@ -28,6 +28,10 @@
 （JSON Schema 三件套供外部工具消费；若环境装了 jsonschema 则附带加载校验。）
 provenance 作者身份/维护者白名单在 workflow 的独立步骤（本文件只管结构）。
 """
+# 单源注记（B4，2026-10-16）：字节基座复制自 census-annotations-work clone 的 v2
+# validate.py（@d36b96d + B3 同批）；主仓 generate-repo-template.js 对本文件逐字节
+# 读取嵌入（不走 JS 模板字符串——\d/\. 转义吞噬类回归从根消灭）。改本文件 →
+# 重生成公共仓模板 → 治理 PR；勿在公共仓侧手改。
 import hashlib
 import json
 import os
@@ -65,6 +69,7 @@ errors = []
 referenced_shards = set()          # v1 legacy + v2 uploads 引用（全路径）
 referenced_indexes = set()         # v2 index sidecar 引用
 contribution_refs = []             # consensus provenance 引用的 (ghid, pushId)
+consensus_joinids = {}             # (namespace, vN) → overrides 已见 join_id 集（服务端⑩）
 
 
 def fail(path, msg):
@@ -115,29 +120,32 @@ def check_block_text(rel, text, field_name):
 
 
 def validate_block_tsv(repo, rel, shard_meta, manifest_rel):
-    """v2 组块分片校验（状态机：#BLOCK 头置当前块，id 行归属当前块）。"""
+    """v2 组块分片校验（状态机：#BLOCK 头置当前块，id 行归属当前块）。
+    返回本分片见过的 join_id 集（consensus overrides 跨分片唯一性消费——服务端⑩）。"""
     full = os.path.join(repo, rel)
     if not os.path.isfile(full):
         fail(rel, f"分片不存在（manifest={manifest_rel}）")
-        return
+        return set()
     raw = read_bytes(rel, full, "分片")
     if raw is None:
-        return
+        return set()
     if len(raw) > SHARD_MAX_BYTES:
         fail(rel, f"分片超 {SHARD_MAX_BYTES}B")
+        return set()
     if raw.startswith(b'\xef\xbb\xbf'):
         fail(rel, "UTF-8 BOM 不允许")
+        return set()
     try:
         text = raw.decode('utf-8')
     except UnicodeDecodeError as e:
         fail(rel, f"非 UTF-8: {e}")
-        return
+        return set()
     lines = text.split('\n')
     if lines and lines[-1] == '':
         lines = lines[:-1]
     if not lines or not lines[0].startswith(BLOCK_HEADER_PREFIX):
         fail(rel, "组块分片首行必须是 #BLOCK 头")
-        return
+        return set()
     prev_block = None   # (ct, label)：块间字典序
     cur_block = None
     cur_count_decl = None
@@ -208,6 +216,7 @@ def validate_block_tsv(repo, rel, shard_meta, manifest_rel):
         sha = hashlib.sha256(raw).hexdigest()
         if sha != shard_meta.get('sha256'):
             fail(rel, "sha256 与 manifest 不符")
+    return seen_ids
 
 
 def validate_tsv(repo, rel, shard_meta, manifest_rel):
@@ -474,7 +483,16 @@ def validate_consensus(repo, full, rel, current_targets):
         fail(rel, f"vN 目录内不允许的文件名: {parts[-1]!r}")
         return
     if parts[-1].endswith('.tsv'):
-        validate_block_tsv(repo, rel, None, None)
+        ids = validate_block_tsv(repo, rel, None, None)
+        # 服务端⑩：overrides 跨分片 join_id 唯一性（emit 唯一性约定的 validate 侧
+        # 防线；读者 last-wins 语义由消费端测试文档化——R5-L4）
+        vm2 = CONSENSUS_VN_RE.match(os.path.dirname(rel) + '/')
+        if vm2 and parts[-1].startswith('overrides.'):
+            bucket = consensus_joinids.setdefault((vm2.group(1), vm2.group(2)), set())
+            dups = ids & bucket
+            if dups:
+                fail(rel, f"overrides 跨分片 join_id 重复（emit 唯一性约定失守）: {sorted(dups)[:5]}")
+            bucket |= ids
         return
     if parts[-1] == 'provenance.json':
         data = read_json(rel, full, "provenance")
@@ -504,6 +522,43 @@ def validate_consensus(repo, full, rel, current_targets):
                 if (not isinstance(pair, list) or len(pair) != 2
                         or not all(isinstance(x, str) and x for x in pair)):
                     fail(rel, f"default.json map 条目形状非法: {str(pair)[:40]!r}")
+                    continue
+                # 仓侧⑥：map 值（与键）码点红线——组改名产物与上传块同约束
+                for side, txt in zip(('ct', 'label'), pair):
+                    if codepoints(txt) > LABEL_MAX:
+                        fail(rel, f"default.json map {side} 超 {LABEL_MAX} 码点: {txt[:40]!r}")
+    elif parts[-1] == 'overrides.index.json':
+        # 仓侧⑥：overrides.index.json 形状校验（blocks/totals/field + 裸分片名）
+        blocks = data.get('blocks')
+        if not isinstance(blocks, list):
+            fail(rel, "overrides.index.json blocks 须为数组")
+            return
+        totals = data.get('totals') or {}
+        seen_blk = set()
+        total_rows = 0
+        for b in blocks:
+            ct, label = b.get('ct'), b.get('label')
+            check_block_text(rel, ct, "ct")
+            check_block_text(rel, label, "label")
+            key = (ct, label)
+            if key in seen_blk:
+                fail(rel, f"overrides.index.json 同 (ct,label) 重复条目: {key!r}")
+            seen_blk.add(key)
+            rows = b.get('rows')
+            if not isinstance(rows, int) or rows < 1:
+                fail(rel, f"overrides.index.json blocks[].rows 非法: {rows!r}")
+            else:
+                total_rows += rows
+            for sf in (b.get('shards') or []):
+                # 裸名约定（emit.py:181）：相对 vN 目录的 overrides.NNN.tsv——带路径即拒
+                if not isinstance(sf, str) or not re.match(r'^overrides\.[0-9]{3}\.tsv$', sf):
+                    fail(rel, f"overrides.index.json blocks[].shards 形状非法（须裸名 overrides.NNN.tsv）: {sf!r}")
+        if totals.get('rows') is not None and totals.get('rows') != total_rows:
+            fail(rel, f"overrides.index.json totals.rows 不符（{totals.get('rows')} != {total_rows}）")
+        if totals.get('blocks') is not None and totals.get('blocks') != len(blocks):
+            fail(rel, "overrides.index.json totals.blocks 与 blocks 数不符")
+        if data.get('field') != 'community_anno':
+            fail(rel, "overrides.index.json field 必须是 community_anno")
 
 
 def validate_comments(repo, full, rel):
@@ -530,6 +585,71 @@ def validate_comments(repo, full, rel):
 MODERATION_ALLOW = {'aliases.json'}
 ONTOLOGY_ALLOW = {'mapping.json', 'cl-parents.json'}
 SCHEMAS_ALLOW = {'manifest.schema.json', 'origin.schema.json', 'comments.schema.json', 'tsv-contract.md'}
+
+
+def _schema_check(repo):
+    """B5：jsonschema Draft 2020-12 实校验（$ref 经 referencing Registry 解析）。
+
+    - 覆盖面：manifest（v2；v1 过渡窗走结构面——仓级 baseline 闸门已封新 v1 写入）
+      与 comments sidecar；
+    - fail-closed：schema 缺失/不可读/非法即 fail（不静默降级）；
+    - 本地未装 jsonschema：打提示跳过（CI 侧 yml 强制安装后必跑）。
+    """
+    try:
+        import jsonschema
+        from jsonschema import Draft202012Validator
+        from referencing import Registry, Resource
+    except ImportError:
+        print("   ⚠ 未安装 jsonschema——schema 复核跳过（CI 强制安装后必跑）")
+        return
+    schema_dir = os.path.join(repo, 'annotations', 'schemas')
+    loaded = {}
+    registry = Registry()
+    for name in ('manifest.schema.json', 'origin.schema.json', 'comments.schema.json'):
+        full = os.path.join(schema_dir, name)
+        try:
+            raw = open(full, 'rb').read()
+        except OSError as e:
+            fail(f"annotations/schemas/{name}", f"schema 不可读（fail-closed）: {e}")
+            return
+        try:
+            schema = json.loads(raw.decode('utf-8'))
+        except Exception as e:
+            fail(f"annotations/schemas/{name}", f"schema JSON 非法（fail-closed）: {e}")
+            return
+        loaded[name] = schema
+        # Resource.from_contents 裸调：schema 自带 $schema 声明，自动探测 draft
+        # （显式 DRAFT202012 绑定须 referencing.jsonschema.DRAFT202012，勿裸 import）
+        registry = registry.with_resource(schema.get('$id') or name, Resource.from_contents(schema))
+    validators = {}
+    for name, schema in loaded.items():
+        try:
+            validators[name] = Draft202012Validator(schema, registry=registry)
+        except Exception as e:
+            fail(f"annotations/schemas/{name}", f"schema 编译失败（fail-closed）: {e}")
+            return
+    n_checked = 0
+    for root, _dirs, files in os.walk(os.path.join(repo, 'annotations')):
+        for f in files:
+            full = os.path.join(root, f)
+            rel = os.path.relpath(full, repo)
+            schema_name = None
+            if f == 'manifest.json':
+                schema_name = 'manifest.schema.json'
+            elif f.endswith('.comments.json') and rel.startswith('annotations/datasets/'):
+                schema_name = 'comments.schema.json'
+            if schema_name is None:
+                continue
+            try:
+                doc = json.loads(open(full, 'rb').read().decode('utf-8'))
+            except Exception:
+                continue  # 结构侧已记错，不重复报
+            if schema_name == 'manifest.schema.json' and doc.get('version') != 2:
+                continue  # v1 过渡窗：结构面管辖（schema 已 const 2——干净版拍板）
+            for err in validators[schema_name].iter_errors(doc):
+                fail(rel, f"schema: {err.json_path} {str(err.message)[:120]}")
+            n_checked += 1
+    print(f"   schema 复核完成（{n_checked} 份）")
 
 
 def main():
@@ -648,12 +768,10 @@ def main():
     for ghid, push_id in contribution_refs:
         if (ghid, push_id) not in known_uploads:
             fail(f"consensus provenance 引用了不存在的上传: {ghid}/{push_id}")
-    # 附加：环境有 jsonschema 时加载三件套对 manifest/comments 复核
-    try:
-        import jsonschema  # noqa: F401
-        # 结构检查已覆盖 schema 的全部硬性条款；此处留作外部工具互证入口
-    except ImportError:
-        pass
+    # B5：JSON Schema 实校验（弃 no-op——只升 schema 不接线，下次漂移依旧无声）。
+    # CI 侧 validate.yml pip 安装 jsonschema==4.23.0（pin）强制跑；本地未装打提示
+    # 跳过不阻断；schema 不可读/非法 = 对仓 fail-closed。
+    _schema_check(repo)
     if errors:
         print("❌ validate.py 发现问题：", file=sys.stderr)
         for e in errors[:80]:

@@ -1,7 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "$id": "manifest.schema.json",
-  "title": "AnnotCommunity per-user manifest",
+  "title": "AnnotCommunity per-user manifest（v2：uploads 注册表 + legacy_fields 冻结）",
   "type": "object",
   "required": [
     "version",
@@ -9,12 +9,13 @@
     "githubUserId",
     "login",
     "updatedAt",
-    "fields",
+    "legacy_fields",
+    "uploads",
     "pushes"
   ],
   "properties": {
     "version": {
-      "const": 1
+      "const": 2
     },
     "username": {
       "type": "string",
@@ -42,7 +43,7 @@
     "updatedAt": {
       "type": "string"
     },
-    "fields": {
+    "legacy_fields": {
       "type": "object",
       "propertyNames": {
         "pattern": "^[a-z0-9_]+$",
@@ -140,6 +141,115 @@
           },
           "lastPushId": {
             "type": "string"
+          }
+        }
+      }
+    },
+    "uploads": {
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^p_[A-Za-z0-9_-]{2,64}$"
+      },
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "field",
+          "at",
+          "rows",
+          "censusVersion",
+          "origin",
+          "shards",
+          "blocksRef"
+        ],
+        "properties": {
+          "field": {
+            "const": "community_anno"
+          },
+          "at": {
+            "type": "string"
+          },
+          "rows": {
+            "type": "integer",
+            "minimum": 1,
+            "maximum": 1000000
+          },
+          "censusVersion": {
+            "type": "string",
+            "minLength": 1,
+            "maxLength": 64
+          },
+          "slice": {
+            "type": [
+              "object",
+              "null"
+            ]
+          },
+          "origin": {
+            "$ref": "origin.schema.json"
+          },
+          "shards": {
+            "type": "array",
+            "maxItems": 50,
+            "items": {
+              "type": "object",
+              "required": [
+                "file",
+                "rows",
+                "sha256",
+                "minKey",
+                "maxKey"
+              ],
+              "properties": {
+                "file": {
+                  "type": "string",
+                  "pattern": "^community_anno/p_[A-Za-z0-9_-]{2,64}\\.[0-9]{3}\\.tsv$"
+                },
+                "rows": {
+                  "type": "integer",
+                  "minimum": 1,
+                  "maximum": 20000
+                },
+                "sha256": {
+                  "type": "string",
+                  "pattern": "^[0-9a-f]{64}$"
+                },
+                "minKey": {
+                  "type": "string",
+                  "pattern": "^[0-9]{1,19}$"
+                },
+                "maxKey": {
+                  "type": "string",
+                  "pattern": "^[0-9]{1,19}$"
+                }
+              }
+            }
+          },
+          "bloom": {
+            "type": [
+              "object",
+              "null"
+            ],
+            "properties": {
+              "m": {
+                "type": "integer"
+              },
+              "k": {
+                "type": "integer"
+              },
+              "n": {
+                "type": "integer"
+              },
+              "advisory": {
+                "type": "boolean"
+              }
+            }
+          },
+          "blocksRef": {
+            "type": [
+              "string",
+              "null"
+            ],
+            "pattern": "^community_anno/p_[A-Za-z0-9_-]{2,64}\\.index\\.json$"
           }
         }
       }
