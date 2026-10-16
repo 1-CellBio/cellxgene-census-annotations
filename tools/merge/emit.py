@@ -3,11 +3,17 @@
 
 decisions.json 形状（04 册 §2.2）：
   { "targetVersion": 4,
+    "decidedAt": "2026-10-16T00:00:00Z",
     "groups": { "T cell": "T cell (coarse, needs split)", "unknown": "unknown" },
     "splits": [ { "ct": "T cell", "label": "CD8-positive, alpha-beta T cell",
                   "from": { "ghid": "ghid_222123526", "pushId": "x", "block": 12 },
                   "note": "采纳该用户拆分" } ],
     "include": [ { "ghid": "ghid_…", "pushId": "old", "as": "pinned" } ] }
+
+decidedAt 必填（R6-5 fail-closed）：consensus updatedAt 与 provenance.decidedAt
+的单一时间源——缺席时两者双 null，面板显示「· —」（v1-v3 照旧例操作全漏的
+根因）。取裁决日即可（v0 种子先例=日粒度零点 ISO）；复跑确定性由 decisions
+（唯一人写输入）保证，同输入复跑字节不变。
 
 pushId 一律写裸 id（如 "x"）——emit 内部以 f'p_{push_id}' 拼 uploads 键（历史版
 本档示例误带 p_ 前缀，照抄会查不到上传）。
@@ -79,6 +85,13 @@ def emit(repo, namespace, decisions_path):
     prev = current.get('version', 0)
     if not isinstance(target, int) or target != prev + 1:
         raise SystemExit(f'❌ targetVersion={target} 必须等于 current+1（={prev + 1}）')
+    # R6-5：decidedAt fail-closed（v1-v3 照旧例操作全漏——updatedAt/provenance
+    # 双 null、面板「· —」）。格式从宽：非空字符串 + 日期前缀（v0 种子是日粒度
+    # 零点 ISO，勿强制秒级时刻）。
+    decided_at = decisions.get('decidedAt')
+    if not isinstance(decided_at, str) or not re.match(r'^\d{4}-\d{2}-\d{2}', decided_at):
+        raise SystemExit('❌ decisions.decidedAt 必填（非空字符串，YYYY-MM-DD 前缀的 ISO 时间）——'
+                         'consensus updatedAt 与 provenance.decidedAt 的单一时间源（示例见 04 册 §2.2）')
 
     users_dir = os.path.join(ns_dir, 'users')
     manifests = {}
@@ -220,13 +233,13 @@ def emit(repo, namespace, decisions_path):
                   open(os.path.join(out_dir, 'overrides.index.json'), 'w'), ensure_ascii=False, indent=1)
 
     json.dump({
-        'version': target, 'decidedAt': decisions.get('decidedAt') or None, 'decider': decisions.get('decider') or '1-CellBio',
+        'version': target, 'decidedAt': decided_at, 'decider': decisions.get('decider') or '1-CellBio',
         'basedOn': {'censusVersion': '2025-11-08', 'prevVersion': prev},
         'contributions': sorted(contributions, key=lambda c: (c['ghid'], c['pushId'])),
         'groupsChanged': len(mapping), 'splits': len(override_blocks),
     }, open(os.path.join(out_dir, 'provenance.json'), 'w'), ensure_ascii=False, indent=1)
 
-    json.dump({'field': 'community_anno', 'version': target, 'updatedAt': decisions.get('decidedAt') or None},
+    json.dump({'field': 'community_anno', 'version': target, 'updatedAt': decided_at},
               open(os.path.join(cons_dir, 'current.json'), 'w'), indent=1)
     print(f'✅ emit v{target}：groups={len(mapping)} splits={len(override_blocks)} contributions={len(contributions)}')
     if merged_count > 0:
