@@ -1,0 +1,10 @@
+{
+ "version": 1,
+ "censusVersion": "2025-11-08",
+ "map": [
+  [
+   "CD4-positive, alpha-beta memory T cell",
+   "CD4-positive memory T cell"
+  ]
+ ]
+}
