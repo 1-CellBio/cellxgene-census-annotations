@@ -9,6 +9,8 @@
 > **ZH** — **CELLxGENE Census 社区细胞注释共享仓**，由 [1Cellbio](https://github.com/1-CellBio)
 > 单细胞分析平台的注释社区发布。
 
+> **Status / 状态** — 🚧 In active development, not yet fully tested. 🚧 整体开发中，尚未完整测试。
+
 **English** · [中文](#中文)
 
 ---
